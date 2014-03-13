@@ -21,8 +21,14 @@
 </head>
 <body>
 <div class="container">
-	<?php echo $this->Session->flash(); ?>
-	<?php echo $this->fetch('content'); ?>
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-lg-3">
+			<div class="container">
+				<?php echo $this->Session->flash(); ?>
+				<?php echo $this->fetch('content'); ?>
+			</div>
+		</div>
+	</div>
 </div>
 	<?php // echo $this->element('sql_dump'); ?>
 	<!-- Latest compiled and minified JavaScript. At end so page loads faster -->
