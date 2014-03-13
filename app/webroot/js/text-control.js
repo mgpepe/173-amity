@@ -26,7 +26,7 @@ var textControl=(function(){
 				if(t_number!=index){
 					$(this).hide('fast');
 				}
-			})
+			});
 				
 		},
 		update_futures:function(){
@@ -39,5 +39,5 @@ var textControl=(function(){
 			
 		}
 		
-	}
+	};
 }());

@@ -3,7 +3,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $title_for_layout; ?> | 138 Sackett
+		<?php echo $title_for_layout; ?> | 173 Amity ST.
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -21,19 +21,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="container" class="">
-		<!-- navbar -->
-		<?php echo $this->element('navbar'); ?>
+	<div id="container">
 		<!-- content -->
 		<div id="contentx">
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>
 		</div>
-		<!-- div id="footer">
-			<div class="container">
-				footer
-			</div>
-		</div> -->
+
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 	<!-- Latest compiled and minified JavaScript. At end so page loads faster -->
