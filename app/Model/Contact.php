@@ -1,10 +1,17 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * ContactForm Model
+ * Contact Model
  *
  */
-class ContactForm extends AppModel {
+class Contact extends AppModel {
+
+/**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'first_name';
 
 /**
  * Validation rules
@@ -12,24 +19,6 @@ class ContactForm extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				'message' => 'Please type a valid email',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'first_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -50,7 +39,15 @@ class ContactForm extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'message' => array(
+		'email' => array(
+			'email' => array(
+				'rule' => array('email'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
