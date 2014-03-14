@@ -56,7 +56,7 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
 	$(document).on('ready', function(){
-		$.backstretch("/img/images/1.jpg");
+		$.backstretch("/img/home/1.jpg");
 
 		function changeCurrent(element) {
 			$('.slider-button').removeClass('current');
@@ -72,7 +72,7 @@
 
 		function getIndex(nElements, offset) {
 			var currentImgSrc = $('.backstretch > img')[0].src,
-				currentIndex  = parseInt(currentImgSrc.slice(28, 29)),
+				currentIndex  = parseInt(currentImgSrc.slice(26, 27)),
 				index;
 
 			if (currentIndex === 1 && offset === -1) {
@@ -89,22 +89,22 @@
 		// Buttons
 		$('.first').click(function(e) {
 			e.preventDefault();
-			$.backstretch('/img/images/1.jpg');
+			$.backstretch('/img/home/1.jpg');
 			changeCurrent(this);
 		});
 		$('.second').click(function(e) {
 			e.preventDefault();
-			$.backstretch('/img/images/2.jpg');
+			$.backstretch('/img/home/2.jpg');
 			changeCurrent(this);
 		});
 		$('.third').click(function(e) {
 			e.preventDefault();
-			$.backstretch('/img/images/3.jpg');
+			$.backstretch('/img/home/3.jpg');
 			changeCurrent(this);
 		});
 		$('.fourth').click(function(e) {
 			e.preventDefault();
-			$.backstretch('/img/images/4.jpg');
+			$.backstretch('/img/home/4.jpg');
 			changeCurrent(this);
 		});
 		// prev and next controls
@@ -112,7 +112,7 @@
 			e.preventDefault();
 
 			var index = getIndex(4, -1),
-				path  = '/img/images/' + index + '.jpg';
+				path  = '/img/home/' + index + '.jpg';
 
 			changeCurrentTwo(index - 1);
 			
@@ -122,10 +122,9 @@
 			e.preventDefault();
 
 			var index = getIndex(4, 1),
-				path  = '/img/images/' + index + '.jpg';
+				path  = '/img/home/' + index + '.jpg';
 
 			changeCurrentTwo(index - 1);
-
 			$.backstretch(path);
 		})
 
