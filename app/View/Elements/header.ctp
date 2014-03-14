@@ -16,7 +16,7 @@
 			<li class="<?php if (isset($isHome) ) echo 'active'; ?>"><a class="uppercase menued "  href="/neighborhood">Neighborhood</a></li>
 			<li class="<?php if (isset($isAvailability) ) echo 'active'; ?>"><a class="uppercase menued "  href="/availability">Availability</a></li>
 			<li class="<?php if (isset($isHome) ) echo 'active'; ?>"><a class="uppercase menued "  href="/team">Team</a></li>
-			<li class="<?php if (isset($isHome) ) echo 'active'; ?>"><a class="uppercase menued "  href="/contact">Contact</a></li>
+			<li class="<?php if (isset($isContacts) ) echo 'active'; ?>"><a class="uppercase menued "  href="/contacts">Contact</a></li>
 			<li class="<?php if (isset($isHome) ) echo 'active'; ?>"><a class="uppercase menued "  href="/press">Press</a></li>
     	</ul>
 	</nav>
