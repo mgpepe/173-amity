@@ -4,7 +4,7 @@
             <div class="container">
 
                 
-<?php  echo $this->element('header'); ?>
+                <?php  echo $this->element('header'); ?>
 
                 <div class="row">
                     <div class="content">
