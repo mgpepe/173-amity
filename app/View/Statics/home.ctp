@@ -26,9 +26,6 @@
 				</div>
 		</div>
 	</div>
-	<div class="col-md-3 col-sm-4 col-lg-3">
-	content
-	</div>
 	
 </div>
 
