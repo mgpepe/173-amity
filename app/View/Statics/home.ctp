@@ -1,31 +1,9 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-3 col-sm-4 col-lg-3">
-			<div class="container">
+<div class="row">
+	<div class="col-md-3 col-sm-4 col-lg-3">
+		<div class="container">
 
-				<div class="row">
-					<div id="logo" class="small-bottom">
-						<img src="app/webroot/img/logo.jpg" alt="logo" class="img-responsive">
-					</div>
-				</div>
-
-				<div class="row">
-					<nav id="header" role="navigation">
-						<!-- Dirty hack to detect mobile collapse and kill hover -->
-						<div id="js-detect-mobile-collapse" class="visible-xs"></div>
-
-						<ul class="nav-list no-margin small-bottom">
-							<li class="<?php if ($page=='home') echo 'active'; ?>"><a class="uppercase menued "  href="/">Home</a></li>
-							<li class="<?php if ($page=='gallery') echo 'active'; ?>"><a class="uppercase menued "  href="/gallery">Gallery</a></li>
-							<li class="<?php if ($page=='neighborhood') echo 'active'; ?>"><a class="uppercase menued "  href="/neighborhood">Neighborhood</a></li>
-							<li class="<?php if ($page=='availability') echo 'active'; ?>"><a class="uppercase menued "  href="/availability">Availability</a></li>
-							<li class="<?php if ($page=='team') echo 'active'; ?>"><a class="uppercase menued "  href="/team">Team</a></li>
-							<li class="<?php if ($page=='contact') echo 'active'; ?>"><a class="uppercase menued "  href="/contact">Contact</a></li>
-							<li class="<?php if ($page=='press') echo 'active'; ?>"><a class="uppercase menued "  href="/press">Press</a></li>
-				    	</ul>
-					</nav>
-				</div>
-
+			<?php  echo $this->element('header'); ?>
+			
 				<div class="row">
 					<div class="content">
 						<h1 class="uppercase bolded eighteen-px">173 amity st.</h1>
@@ -47,9 +25,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 	</div>
+	<div class="col-md-3 col-sm-4 col-lg-3">
+	content
+	</div>
+	
 </div>
 
 <?php echo $this->Html->script('box-control'); ?>
@@ -60,13 +41,11 @@
 
 		function changeCurrent(element) {
 			$('.slider-button').removeClass('current');
-
 			$(element).addClass('current');
 		}
 
 		function changeCurrentTwo(direction) {
 			$('.slider-button').removeClass('current');
-
 			$('.slider-button').eq(direction).addClass('current');
 		}
 
@@ -110,20 +89,15 @@
 		// prev and next controls
 		$('.left').click(function(e) {
 			e.preventDefault();
-
 			var index = getIndex(4, -1),
 				path  = '/img/home/' + index + '.jpg';
-
 			changeCurrentTwo(index - 1);
-			
 			$.backstretch(path);
 		})
 		$('.right').click(function(e) {
 			e.preventDefault();
-
 			var index = getIndex(4, 1),
 				path  = '/img/home/' + index + '.jpg';
-
 			changeCurrentTwo(index - 1);
 			$.backstretch(path);
 		})
