@@ -38,11 +38,15 @@ class StaticsController extends AppController {
  */
 	public $uses = array();
 
-
+    
 	public function home(){
 		$this->set('isHome', true);
 		// $this->layout = 'default-blank';
 	}
+
+    public function gallery() {
+        $this->set('isGallery', true);
+    }
 
 	public function availability(){
 		$this->set('isAvailability', true);
