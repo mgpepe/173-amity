@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'login' => 'root',
 		'password' => 'Nrs5Mguz',
-		'database' => 'job_search',
+		'database' => 'amity',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
