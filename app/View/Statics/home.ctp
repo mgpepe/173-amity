@@ -36,7 +36,14 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
 	$(document).on('ready', function(){
-		$.backstretch("/img/home/1.jpg");
+        $.backstretch([
+            'app/webroot/img/home/1.jpg',
+            'app/webroot/img/home/2.jpg',
+            'app/webroot/img/home/3.jpg',
+            'app/webroot/img/home/4.jpg'
+            ], {duration: 1000, fade: 750});
+
+        $.backstretch('pause');
 
 		function changeCurrent(element) {
 			$('.slider-button').removeClass('current');
@@ -65,40 +72,43 @@
 		}
 
 		// Buttons
-		$('.first').click(function(e) {
-			e.preventDefault();
-			$.backstretch('/img/home/1.jpg');
-			changeCurrent(this);
-		});
-		$('.second').click(function(e) {
-			e.preventDefault();
-			$.backstretch('/img/home/2.jpg');
-			changeCurrent(this);
-		});
-		$('.third').click(function(e) {
-			e.preventDefault();
-			$.backstretch('/img/home/3.jpg');
-			changeCurrent(this);
-		});
-		$('.fourth').click(function(e) {
-			e.preventDefault();
-			$.backstretch('/img/home/4.jpg');
-			changeCurrent(this);
-		});
+        $('.first').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 0);
+            changeCurrent(this);
+        });
+        $('.second').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 1);
+            changeCurrent(this);
+        });
+        $('.third').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 2);
+            changeCurrent(this);
+        });
+        $('.fourth').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 3);
+            changeCurrent(this);
+        });
+
 		// prev and next controls
 		$('.left').click(function(e) {
 			e.preventDefault();
+
 			var index = getIndex(4, -1),
 				path  = '/img/home/' + index + '.jpg';
-			changeCurrentTwo(index - 1);
-			$.backstretch(path);
+
+			$.backstretch('prev');
 		})
 		$('.right').click(function(e) {
 			e.preventDefault();
+
 			var index = getIndex(4, 1),
 				path  = '/img/home/' + index + '.jpg';
-			changeCurrentTwo(index - 1);
-			$.backstretch(path);
+
+            $.backstretch('next');
 		})
 
 	});

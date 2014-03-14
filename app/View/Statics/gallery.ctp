@@ -94,7 +94,15 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
     $(document).on('ready', function(){
-        $.backstretch("/img/gallery/1.jpg");
+        $.backstretch([
+            'app/webroot/img/gallery/1.jpg',
+            'app/webroot/img/gallery/2.jpg',
+            'app/webroot/img/gallery/3.jpg',
+            'app/webroot/img/gallery/4.jpg',
+            'app/webroot/img/gallery/5.jpg'
+            ], {duration: 1000, fade: 750});
+
+        $.backstretch('pause');
 
         function changeCurrent(element) {
             $('.slider-button').removeClass('current');
@@ -105,7 +113,7 @@
         function changeCurrentTwo(direction) {
             $('.slider-button').removeClass('current');
 
-            $('.slider-button').eq(direction).addClass('current');
+            $('.slider-button').eq(direction - 1).addClass('current');
         }
 
         function getIndex(nElements, offset) {
@@ -135,27 +143,27 @@
         // Buttons
         $('.first').click(function(e) {
             e.preventDefault();
-            $.backstretch('/img/gallery/1.jpg');
+            $.backstretch('show', 0);
             changeCurrent(this);
         });
         $('.second').click(function(e) {
             e.preventDefault();
-            $.backstretch('/img/gallery/2.jpg');
+            $.backstretch('show', 1);
             changeCurrent(this);
         });
         $('.third').click(function(e) {
             e.preventDefault();
-            $.backstretch('/img/gallery/3.jpg');
+            $.backstretch('show', 2);
             changeCurrent(this);
         });
         $('.fourth').click(function(e) {
             e.preventDefault();
-            $.backstretch('/img/gallery/4.jpg');
+            $.backstretch('show', 3);
             changeCurrent(this);
         });
         $('.fifth').click(function(e) {
             e.preventDefault();
-            $.backstretch('/img/gallery/5.jpg');
+            $.backstretch('show', 4);
             changeCurrent(this);
         })
         // prev and next controls
@@ -165,9 +173,8 @@
             var index = getIndex(5, -1),
                 path  = '/img/gallery/' + index + '.jpg';
 
-            changeCurrentTwo(index - 1);
-            
-            $.backstretch(path);
+
+            $.backstretch('prev');
         })
         $('.right').click(function(e) {
             e.preventDefault();
@@ -175,9 +182,7 @@
             var index = getIndex(5, 1),
                 path  = '/img/gallery/' + index + '.jpg';
 
-            changeCurrentTwo(index - 1);
-
-            $.backstretch(path);
+            $.backstretch('next');
         })
 
         $('.features-button-open').on('click', function(e) {
