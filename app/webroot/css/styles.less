@@ -83,6 +83,8 @@ h1{
 		display: block;
 		-webkit-transitions: background-color 0.5s, color 0.5s; 
 		transition: background-color 0.5s, color 0.5s;
+		font-family: 'Futura_lt_book';
+		font-size: 15px;
 	}
 
 	.nav-list a:hover,
@@ -205,7 +207,10 @@ h1{
 		padding-top: 40px;
 		font-family: 'Futura_lt_book';
 	}
-
+	.floor-link {
+		cursor: pointer;
+		color: @dark-brownish;
+	}
 }
 .btn {
 	background: @dark-brownish;
@@ -214,13 +219,79 @@ h1{
 }
 .availability-footer {
 	color: @dark-brownish;
-	vertical-align: top;
+	padding-left: 60px;
+	
+	.sig1 {
+		vertical-align: top;
+	}
+	.sig2 {
+		vertical-align: top;
+		width: 10%;
+		height: auto;
+		margin-left: 20px;
+	}
+	p {
+		margin-top: 20px;
+	}
 }
 
 .in-contacts {
 	font-size: 1.4em;
 }
-// FLOORPLANS
+// GALLERY
+.features-button-open {
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 35px;
+	height: 100%;
+	background: #333;
+	width: 35px;
+	height: 250px;
+	background: @dark-brownish url(../img/gallery-features-button.gif);
+	cursor: pointer;
+	z-index: 1;
+}
+.features-window {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgb(208,202,190);
+	background: rgba(208,202,190, 0.9);
+}
+.features-button-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 21px;
+	background: url(../img/gallery-features-close.gif) no-repeat;
+	background-position: top right;
+	cursor: pointer;
+	padding-right: 24px;
+	color: @dark-brownish;
+}
+
+.features {
+	padding: 40px;
+	padding-right: 50px;
+	color: @dark-brownish;
+	.feature {
+		h3 { 
+			font-family: 'Futura_lt_book';
+			font-size: 1.2em;
+			margin-bottom: 5px;
+		}
+		ul {
+			padding-left: 20px;
+			li {
+				font-family: times;
+			}
+		}
+	}
+}
+
 
 // helper classes
 .uppercase { text-transform: uppercase;}
@@ -262,4 +333,6 @@ h1{
 		color: @brown-link;
 	}
 }
+.display-none { display: none; } 
+
 

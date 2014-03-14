@@ -8,7 +8,7 @@
             </div>
 		</div>
 	</div>
-	<div class="col-md-9 col-sm-8 col-lg-9">
+	<div class="col-md-9 col-sm-8 col-lg-9 very-big-bottom">
 		<div>
 		<table class="availability-table">
 			<thead>
@@ -26,7 +26,7 @@
 				<td>
 			  			<span class="uppercase bolded">1e</span>
 			  			<br>
-			  			<span class="uppercase small-font">floor plan</span>
+			  			<a class="uppercase small-font floor-link">floor plan</a>
 			  		</td>
 			  		<td>
 			  			<span>2</span>
@@ -35,7 +35,7 @@
 			  			<span>2.5</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase bolded">n/a</span>
+			  			<span class="uppercase">n/a</span>
 			  		</td>
 			  		<td>
 			  			<span class="uppercase">$1.8m</span>
@@ -48,127 +48,127 @@
 			  		</td>	
 			  	<tr>
 			  		<td>
-			  			<span class="uppercase bolded">1e</span>
+			  			<span class="uppercase bolded">2e</span>
 			  			<br>
-			  			<span class="uppercase small-font">floor plan</span>
+			  			<a class="uppercase small-font floor-link">floor plan</a>
 			  		</td>
 			  		<td>
 			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span>2.5</span>
+			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase bolded">n/a</span>
+			  			<span class="uppercase">1,334</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase">$1.8m</span>
+			  			<span class="uppercase">$1.65m</span>
 			  		</td>
 			  		<td>
-			  			<span>$429</span>
+			  			<span>$421</span>
 			  		</td>
 			  		<td>
-			  			<span>$806</span>
+			  			<span>$530</span>
 			  		</td>
 			  	</tr>
 			  	<tr>
 			  		<td>
-			  			<span class="uppercase bolded">1e</span>
+			  			<span class="uppercase bolded">2w</span>
 			  			<br>
-			  			<span class="uppercase small-font">floor plan</span>
+			  			<a class="uppercase small-font floor-link">floor plan</a>
+			  		</td>
+			  		<td>
+			  			<span>3+Study</span>
 			  		</td>
 			  		<td>
 			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span>2.5</span>
+			  			<span class="uppercase">1,662</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase bolded">n/a</span>
+			  			<span class="uppercase">$2.1m</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase">$1.8m</span>
+			  			<span>$525</span>
 			  		</td>
 			  		<td>
-			  			<span>$429</span>
-			  		</td>
-			  		<td>
-			  			<span>$806</span>
+			  			<span>$664</span>
 			  		</td>
 			  	</tr>
 			  	<tr>
 			  		<td>
-			  			<span class="uppercase bolded">1e</span>
+			  			<span class="uppercase bolded">3e</span>
 			  			<br>
-			  			<span class="uppercase small-font">floor plan</span>
+			  			<a class="uppercase small-font floor-link">floor plan</a>
 			  		</td>
 			  		<td>
 			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span>2.5</span>
+			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase bolded">n/a</span>
+			  			<span class="uppercase">1,334</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase">$1.8m</span>
+			  			<span class="uppercase">$1.65m</span>
 			  		</td>
 			  		<td>
-			  			<span>$429</span>
+			  			<span>$421</span>
 			  		</td>
 			  		<td>
-			  			<span>$806</span>
+			  			<span>$530</span>
 			  		</td>
 			  	</tr>
 			  	<tr>
 			  		<td>
-			  			<span class="uppercase bolded">1e</span>
+			  			<span class="uppercase bolded">3w</span>
 			  			<br>
-			  			<span class="uppercase small-font">floor plan</span>
+			  			<a class="uppercase small-font floor-link">floor plan</a>
+			  		</td>
+			  		<td>
+			  			<span>2+Study</span>
 			  		</td>
 			  		<td>
 			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span>2.5</span>
+			  			<span class="uppercase">1,662</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase bolded">n/a</span>
+			  			<span class="uppercase">$2.1m</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase">$1.8m</span>
+			  			<span>$525</span>
 			  		</td>
 			  		<td>
-			  			<span>$429</span>
-			  		</td>
-			  		<td>
-			  			<span>$806</span>
+			  			<span>$660</span>
 			  		</td>
 			  	</tr>
 			  	<tr>
 			  		<td>
-			  			<span class="uppercase bolded">1e</span>
+			  			<span class="uppercase bolded">4e</span>
 			  			<br>
-			  			<span class="uppercase small-font">floor plan</span>
+			  			<a class="uppercase small-font floor-link">floor plan</a>
 			  		</td>
 			  		<td>
 			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span>2.5</span>
+			  			<span>2</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase bolded">n/a</span>
+			  			<span class="uppercase">1,410</span>
 			  		</td>
 			  		<td>
-			  			<span class="uppercase">$1.8m</span>
+			  			<span class="uppercase">$1.95m</span>
 			  		</td>
 			  		<td>
-			  			<span>$429</span>
+			  			<span>$445</span>
 			  		</td>
 			  		<td>
-			  			<span>$806</span>
+			  			<span>$562</span>
 			  		</td>
 			  	</tr>
 			</tbody>
