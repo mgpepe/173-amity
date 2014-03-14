@@ -8,8 +8,7 @@
 					<div class="content">
 						<h1 class="uppercase bolded eighteen-px">173 amity st.</h1>
 						<p class="very-big-bottom">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, magnam, fugit mollitia natus aliquid aliquam necessitatibus aut vitae dolor deserunt perspiciatis non ullam voluptatum fuga quam? Distinctio consequatur nemo earum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, voluptatibus similique error vel sint fugit beatae quod sapiente animi vero voluptate quasi deserunt veritatis provident aliquid. Numquam, corporis fuga suscipit.
+							Feugiat ante non mattis sceleris- que. Suspendisse eu nisl venenatis nisi fermentum vestibulum. Donec pretium adipiscing orci, eu sagittis ipsum. Ut at venenatis odio. Sus- pendisse ac felis ut nulla accumsan tincidunt. Mauris sagittis rhoncus erat, non semper nisi mollis vitae. Aenean gravida ultrices libero vitae blandit. Etiam dignissim vel metus congue rutrum. Maecenas massa justo. Ut at venenatis odio. Suspendisse ac felis ut nulla accumsan tincidunt.
 						</p>
 
 						<div class="slider">
