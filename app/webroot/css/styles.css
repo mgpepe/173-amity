@@ -172,6 +172,10 @@ h1 {
   padding-top: 40px;
   font-family: 'Futura_lt_book';
 }
+.availability-table .floor-link {
+  cursor: pointer;
+  color: #4f4135;
+}
 .btn {
   background: #4f4135;
   color: #beb8ac;
@@ -179,7 +183,19 @@ h1 {
 }
 .availability-footer {
   color: #4f4135;
+  padding-left: 60px;
+}
+.availability-footer .sig1 {
   vertical-align: top;
+}
+.availability-footer .sig2 {
+  vertical-align: top;
+  width: 10%;
+  height: auto;
+  margin-left: 20px;
+}
+.availability-footer p {
+  margin-top: 20px;
 }
 .in-contacts {
   font-size: 1.4em;
