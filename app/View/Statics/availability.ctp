@@ -175,5 +175,10 @@
 		</table>
 		</div>
 	</div>
+	<footer class="availability-footer very-small-font col-md-9 col-sm-8 col-lg-9">
+		<img src="/img/signature2.gif" alt="signature2" class="sig1">
+		<img src="/img/signature.gif" alt="signture" class="sig2">
+		<p>All dimensions are appropriate and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. Plans and dimensions may contain minor variations from floor to floor. This is not an offerig, 173 Amity LLC something something. The complete offering terms arein an offering plan available from sponsor. File CD13-0027</p>
+	</footer>
 	
 </div>

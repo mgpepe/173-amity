@@ -111,8 +111,28 @@ h1 {
 .content .slider .controls .right {
   background: url(../img/right-arrow.jpg);
 }
-#contact-block {
-  background: #BEB8AC;
+.contact-form {
+  background: #ccc8bb;
+  background: rgba(204, 200, 187, 0.7);
+  color: #4f4135;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  vertical-align: middle;
+  padding: 150px 40px;
+  font-family: sans-serif;
+}
+.contact-content {
+  background: #ccc8bb;
+  background: rgba(204, 200, 187, 0.7);
+  text-align: center;
+  color: #4f4135;
+  padding: 40px 0;
+}
+.contact-content .signature-img {
+  margin: 0 auto;
 }
 .grey-liner {
   min-height: 36px;
@@ -152,6 +172,18 @@ h1 {
   padding-top: 40px;
   font-family: 'Futura_lt_book';
 }
+.btn {
+  background: #4f4135;
+  color: #beb8ac;
+  font-family: 'Futura_lt_book';
+}
+.availability-footer {
+  color: #4f4135;
+  vertical-align: top;
+}
+.in-contacts {
+  font-size: 1.4em;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -179,6 +211,12 @@ h1 {
 .small-bottom {
   margin-bottom: 10px;
 }
+.big-font {
+  font-size: 22px;
+}
+.normal-font {
+  font-size: 16px;
+}
 .medium-font {
   font-size: 14px;
 }
@@ -187,4 +225,10 @@ h1 {
 }
 .very-small-font {
   font-size: 10px;
+}
+.times {
+  font-family: times;
+}
+.vertical-center {
+  vertical-align: middle;
 }
