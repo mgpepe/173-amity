@@ -6,7 +6,7 @@
 			
 				<div class="row">
 					<div class="content">
-						<h1 class="uppercase bolded eighteen-px">173 amity st.</h1>
+						<h1 class="uppercase heading">173 amity st.</h1>
 						<p class="very-big-bottom">
 							Feugiat ante non mattis sceleris- que. Suspendisse eu nisl venenatis nisi fermentum vestibulum. Donec pretium adipiscing orci, eu sagittis ipsum. Ut at venenatis odio. Sus- pendisse ac felis ut nulla accumsan tincidunt. Mauris sagittis rhoncus erat, non semper nisi mollis vitae. Aenean gravida ultrices libero vitae blandit. Etiam dignissim vel metus congue rutrum. Maecenas massa justo. Ut at venenatis odio. Suspendisse ac felis ut nulla accumsan tincidunt.
 						</p>
@@ -29,7 +29,6 @@
 	
 </div>
 
-<?php echo $this->Html->script('box-control'); ?>
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
 	$(document).on('ready', function(){

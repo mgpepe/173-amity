@@ -6,7 +6,7 @@
 
             <div class="row">
                 <div class="content">
-                    <h1 class="uppercase bolded eighteen-px">residences</h1>
+                    <h1 class="uppercase">residences</h1>
                     <p class="very-big-bottom">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, magnam, fugit mollitia natus aliquid aliquam necessitatibus aut vitae dolor deserunt perspiciatis non ullam voluptatum fuga quam? Distinctio consequatur nemo earum.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, voluptatibus similique error vel sint fugit beatae quod sapiente animi vero voluptate quasi deserunt veritatis provident aliquid. Numquam, corporis fuga suscipit.
@@ -163,7 +163,6 @@
             var index = getIndex(5, -1);
 
             changeCurrentButton(null, index);
-            console.log(index);
 
             $.backstretch('prev');
         });
