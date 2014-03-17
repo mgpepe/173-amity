@@ -56,6 +56,10 @@ class StaticsController extends AppController {
         $this->set('isNeighborhood', true);
     }
 
+    public function team() {
+        $this->set('isTeam', true);
+    }
+
     public function press() {
         $this->set('isPress', true);
     }

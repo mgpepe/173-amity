@@ -2,7 +2,7 @@
 	<div class="col-md-3 col-sm-4 col-lg-3 ">
 		<div class="container">
 
-			<?php  echo $this->element('header'); ?>
+			<?php echo $this->element('header'); ?>
 			
 				<div class="row">
 					<div class="contact-content" style="height: 200px;">
@@ -10,8 +10,6 @@
 				</div>
 		</div>
 	</div>
-
-
 
 	<div class=" col-md-9 col-sm-9 col-lg-9 timestext"  >
 		<div class="row press-item">

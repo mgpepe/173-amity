@@ -2,7 +2,7 @@
 	<div class="col-md-3 col-sm-4 col-lg-3">
 		<div class="container">
 
-			<?php  echo $this->element('header'); ?>
+			<?php echo $this->element('header'); ?>
 			
 				<div class="row">
 					<div class="content">
@@ -38,29 +38,30 @@
             'app/webroot/img/home/2.jpg',
             'app/webroot/img/home/3.jpg',
             'app/webroot/img/home/4.jpg'
-            ], {duration: 1000, fade: 750});
+            ], {duration: 1000, fade: 300});
 
         $.backstretch('pause');
 
-		function changeCurrent(element) {
+		function changeCurrentButton(element, index) {
 			$('.slider-button').removeClass('current');
-			$(element).addClass('current');
-		}
 
-		function changeCurrentTwo(direction) {
-			$('.slider-button').removeClass('current');
-			$('.slider-button').eq(direction).addClass('current');
+			if (!element){
+				$('.slider-button').eq(index).addClass('current');
+			} else {
+				$(element).addClass('current');	
+			}
+			
 		}
 
 		function getIndex(nElements, offset) {
 			var currentImgSrc = $('.backstretch > img')[0].src,
-				currentIndex  = parseInt(currentImgSrc.slice(26, 27)),
+				currentIndex  = parseInt(currentImgSrc.slice(38, 39)) - 1,
 				index;
 
-			if (currentIndex === 1 && offset === -1) {
-				index = nElements;
-			} else if (currentIndex === nElements && offset === 1){
-				index = 1;
+			if (currentIndex === 0 && offset === -1) {
+				index = nElements - 1;
+			} else if (currentIndex === nElements - 1 && offset === 1){
+				index = 0;
 			} else {
 				index = currentIndex + offset;
 			}
@@ -72,41 +73,43 @@
         $('.first').click(function(e) {
             e.preventDefault();
             $.backstretch('show', 0);
-            changeCurrent(this);
+            changeCurrentButton(this);
         });
         $('.second').click(function(e) {
             e.preventDefault();
             $.backstretch('show', 1);
-            changeCurrent(this);
+            changeCurrentButton(this);
         });
         $('.third').click(function(e) {
             e.preventDefault();
             $.backstretch('show', 2);
-            changeCurrent(this);
+            changeCurrentButton(this);
         });
         $('.fourth').click(function(e) {
             e.preventDefault();
             $.backstretch('show', 3);
-            changeCurrent(this);
+            changeCurrentButton(this);
         });
 
 		// prev and next controls
 		$('.left').click(function(e) {
 			e.preventDefault();
 
-			var index = getIndex(4, -1),
-				path  = '/img/home/' + index + '.jpg';
+			var index = getIndex(4, -1);
+
+			changeCurrentButton(null, index);
 
 			$.backstretch('prev');
-		})
+		});
 		$('.right').click(function(e) {
 			e.preventDefault();
 
-			var index = getIndex(4, 1),
-				path  = '/img/home/' + index + '.jpg';
+			var index = getIndex(4, 1)
+
+			changeCurrentButton(null, index);
 
             $.backstretch('next');
-		})
+		});
 
 	});
 </script>

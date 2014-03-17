@@ -1,7 +1,9 @@
 <div class="row">
 	<div class="col-md-3 col-sm-4 col-lg-3">
 		<div class="container">
+
 			<?php echo $this->element('header'); ?>
+			
 			<div class="row">
                 <div class="availability-content">
                 </div>

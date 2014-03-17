@@ -2,7 +2,7 @@
     <div class="col-md-3 col-sm-4 col-lg-3">
         <div class="container">
 
-            <?php  echo $this->element('header'); ?>
+            <?php echo $this->element('header'); ?>
 
             <div class="row">
                 <div class="content">
@@ -100,31 +100,29 @@
             'app/webroot/img/gallery/3.jpg',
             'app/webroot/img/gallery/4.jpg',
             'app/webroot/img/gallery/5.jpg'
-            ], {duration: 1000, fade: 750});
+            ], {duration: 1000, fade: 300});
 
         $.backstretch('pause');
 
-        function changeCurrent(element) {
+        function changeCurrentButton(element, index) {
             $('.slider-button').removeClass('current');
 
-            $(element).addClass('current');
-        }
-
-        function changeCurrentTwo(direction) {
-            $('.slider-button').removeClass('current');
-
-            $('.slider-button').eq(direction - 1).addClass('current');
+            if (!element){
+                $('.slider-button').eq(index).addClass('current');
+            } else {
+                $(element).addClass('current'); 
+            }
         }
 
         function getIndex(nElements, offset) {
             var currentImgSrc = $('.backstretch > img')[0].src,
-                currentIndex  = parseInt(currentImgSrc.slice(29, 30)),
+                currentIndex  = parseInt(currentImgSrc.slice(41, 42)) - 1,
                 index;
 
-            if (currentIndex === 1 && offset === -1) {
-                index = nElements;
-            } else if (currentIndex === nElements && offset === 1){
-                index = 1;
+            if (currentIndex === 0 && offset === -1) {
+                index = nElements - 1;
+            } else if (currentIndex === nElements - 1 && offset === 1){
+                index = 0;
             } else {
                 index = currentIndex + offset;
             }
@@ -132,6 +130,54 @@
             return index;
         }
 
+        // Buttons
+        $('.first').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 0);
+            changeCurrentButton(this);
+        });
+        $('.second').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 1);
+            changeCurrentButton(this);
+        });
+        $('.third').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 2);
+            changeCurrentButton(this);
+        });
+        $('.fourth').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 3);
+            changeCurrentButton(this);
+        });
+        $('.fifth').click(function(e) {
+            e.preventDefault();
+            $.backstretch('show', 4);
+            changeCurrentButton(this);
+        })
+        // prev and next controls
+        $('.left').click(function(e) {
+            e.preventDefault();
+
+            var index = getIndex(5, -1);
+
+            changeCurrentButton(null, index);
+            console.log(index);
+
+            $.backstretch('prev');
+        });
+        $('.right').click(function(e) {
+            e.preventDefault();
+
+            var index = getIndex(5, 1);
+
+            changeCurrentButton(null, index);
+            
+            $.backstretch('next');
+        });
+
+        // Feautures window
         function toggleFeaturesWindow() {
             var featuresW = $('.features-window');
 
@@ -139,51 +185,6 @@
                 featuresW.toggleClass('display-none');
             })
         }
-
-        // Buttons
-        $('.first').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 0);
-            changeCurrent(this);
-        });
-        $('.second').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 1);
-            changeCurrent(this);
-        });
-        $('.third').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 2);
-            changeCurrent(this);
-        });
-        $('.fourth').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 3);
-            changeCurrent(this);
-        });
-        $('.fifth').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 4);
-            changeCurrent(this);
-        })
-        // prev and next controls
-        $('.left').click(function(e) {
-            e.preventDefault();
-
-            var index = getIndex(5, -1),
-                path  = '/img/gallery/' + index + '.jpg';
-
-
-            $.backstretch('prev');
-        })
-        $('.right').click(function(e) {
-            e.preventDefault();
-
-            var index = getIndex(5, 1),
-                path  = '/img/gallery/' + index + '.jpg';
-
-            $.backstretch('next');
-        })
 
         $('.features-button-open').on('click', function(e) {
             e.preventDefault();
