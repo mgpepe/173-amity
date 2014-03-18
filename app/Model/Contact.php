@@ -22,7 +22,7 @@ class Contact extends AppModel {
 		'first_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				// 'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -58,4 +58,13 @@ class Contact extends AppModel {
 			),
 		),
 	);
+
+	public function getAllContacts(){
+		$all = $this->find('all');
+		return $all;
+	}
+
 }
+
+
+

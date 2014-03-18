@@ -25,6 +25,15 @@ class ContactsController extends AppController {
 		$this->set('contacts', $this->Paginator->paginate());
 	}
 
+
+	public function allthec() {
+		$contacts = $this->Contact->getAllContacts();
+		foreach ($contacts as &$c) {
+			$c['Contact']['signedup']=date('m/d/y', strtotime($c['Contact']['created'])  );
+		}
+		$this->set(compact('contacts'));
+	}
+
 /**
  * view method
  *
@@ -103,7 +112,8 @@ class ContactsController extends AppController {
 		} else {
 			$this->Session->setFlash(__('The contact could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect(array('action' => 'allthec'));
+
 	}
 
 /**

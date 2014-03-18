@@ -5,7 +5,7 @@
             <?php echo $this->element('header'); ?>
             
             <div class="row">
-                <div class="team-sidebar">
+                <div id="team-sidebar" class="empty-content">
                 </div>
             </div>
         </div>

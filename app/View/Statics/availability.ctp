@@ -5,7 +5,7 @@
 			<?php echo $this->element('header'); ?>
 			
 			<div class="row">
-                <div class="availability-content">
+                <div class="empty-content">
                 </div>
             </div>
 		</div>

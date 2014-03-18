@@ -37,7 +37,8 @@
     Router::connect('/neighborhood', array('controller' => 'statics', 'action' => 'neighborhood'));
     Router::connect('/team', array('controller' => 'statics', 'action' => 'team'));
     Router::connect('/press', array('controller' => 'statics', 'action' => 'press'));
-	Router::connect('/*', array('controller' => 'pages', 'action' => 'display'));
+    Router::connect('/all_the_contacts', array('controller' => 'contacts', 'action' => 'allthec'));
+	// Router::connect('/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
