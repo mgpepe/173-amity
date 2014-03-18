@@ -125,6 +125,30 @@ h1 {
 .content .slider .controls .right {
   background: url(../img/right-arrow.jpg);
 }
+.content .map-legend {
+  list-style: none;
+  padding: 0;
+  display: none;
+  font-size: 13pt;
+  font-family: times;
+  color: #4b3627;
+  line-height: 35pt;
+  margin: 10px 0 50px 0;
+}
+.content .map-legend li {
+  position: relative;
+  padding-right: 35px;
+}
+.content .map-legend li div {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  bottom: 0;
+  margin: 0;
+}
 .contact-form {
   background: #ccc8bb;
   background: rgba(204, 200, 187, 0.7);
@@ -312,30 +336,215 @@ h1 {
   cursor: pointer;
   z-index: 1;
 }
+.map-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .map {
   position: fixed;
-  top: -30px;
-  right: -1024px;
+  top: 0;
+  left: 0;
   display: none;
   z-index: -1;
 }
-@media (min-width: 1095px) {
-  .map {
-    width: 1400px;
-    height: auto;
-  }
+.restaurants-dot {
+  background: #cc202a;
 }
-@media (min-width: 1274px) {
-  .map {
-    width: 1600px;
-    height: auto;
-  }
+.cafes-dot {
+  background: #35a1cb;
 }
-@media (min-width: 1454px) {
-  .map {
-    width: 1900px;
-    height: auto;
-  }
+.retail-dot {
+  background: #d48b28;
+}
+.grocery-dot {
+  background: #649940;
+}
+.others-dot {
+  background: #1e2a7b;
+}
+.places .place-of-interest {
+  position: fixed;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  z-index: 989;
+  display: none;
+  vertical-align: middle;
+}
+.places .place-of-interest .name {
+  display: none;
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  background: #fff;
+  padding: 5px;
+  z-index: 999;
+  font-family: 'Futura_lt_book';
+}
+.places .place-of-interest .place-arrow {
+  position: absolute;
+  display: none;
+  left: 25px;
+  bottom: 8px;
+  width: 5px;
+  height: 12px;
+  background: url(../img/place-arrow.png) no-repeat;
+  background-size: 5px 12px;
+  z-index: 999;
+}
+.places .place-of-interest .place-arrow-r {
+  background: url(../img/place-arrow-r.png) no-repeat;
+}
+.places .place-of-interest .place {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 3px auto;
+}
+.ted-and-honey {
+  top: 559px;
+  left: 687px;
+}
+.pedlar {
+  top: 561px;
+  left: 800px;
+}
+.chocolate-room {
+  top: 769px;
+  left: 749px;
+}
+.bien-cult {
+  top: 552px;
+  left: 982px;
+}
+.bocca-lupo {
+  top: 547px;
+  left: 597px;
+}
+.strong-place {
+  top: 760px;
+  left: 727px;
+}
+.brucie {
+  top: 686px;
+  left: 755px;
+}
+.watty-and-meg {
+  top: 716px;
+  left: 744px;
+}
+.lavara {
+  top: 577px;
+  left: 686px;
+}
+.joya {
+  top: 598px;
+  left: 811px;
+}
+.pane-e-vino {
+  top: 692px;
+  left: 914px;
+}
+.ki-sushi {
+  top: 565px;
+  left: 975px;
+}
+.kyoto {
+  top: 559px;
+  left: 1004px;
+}
+.hibino {
+  top: 395px;
+  left: 652px;
+}
+.henry-public {
+  top: 376px;
+  left: 659px;
+}
+.colonie {
+  top: 347px;
+  left: 670px;
+}
+.chez-moi {
+  top: 353px;
+  left: 688px;
+}
+.red-gravy {
+  top: 361px;
+  left: 710px;
+}
+.luizzo {
+  top: 376px;
+  left: 746px;
+}
+.barneys {
+  top: 423px;
+  left: 799px;
+}
+.dianet {
+  top: 509px;
+  left: 817px;
+}
+.lily {
+  top: 570px;
+  left: 816px;
+}
+.pink-pepper {
+  top: 586px;
+  left: 814px;
+}
+.papel {
+  top: 656px;
+  left: 791px;
+}
+.homage {
+  top: 634px;
+  left: 927px;
+}
+.home-and-haven {
+  top: 697px;
+  left: 936px;
+}
+.sahadi {
+  top: 399px;
+  left: 808px;
+}
+.damascus {
+  top: 409px;
+  left: 832px;
+}
+.trader-joe {
+  top: 437px;
+  left: 837px;
+}
+.sugar-shop {
+  top: 636px;
+  left: 646px;
+}
+.cobblestone-foods {
+  top: 610px;
+  left: 806px;
+}
+.union-market {
+  top: 817px;
+  left: 708px;
+}
+.henry-pilates {
+  top: 519px;
+  left: 596px;
+}
+.mala-yoga {
+  top: 526px;
+  left: 812px;
+}
+.nysc {
+  top: 535px;
+  left: 991px;
+}
+.equinox {
+  top: 234px;
+  left: 899px;
 }
 .uppercase {
   text-transform: uppercase;
