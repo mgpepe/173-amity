@@ -54,16 +54,18 @@
 
 		function getIndex(nElements, offset) {
 			var currentImgSrc = $('.backstretch > img')[0].src,
-				currentIndex  = parseInt(currentImgSrc.slice(38, 39)) - 1,
+				currentIndex  = currentImgSrc.slice(-5),
+                currentImgIndex = currentIndex.slice(0,1) - 1,
 				index;
 
-			if (currentIndex === 0 && offset === -1) {
+			if (currentImgIndex === 0 && offset === -1) {
 				index = nElements - 1;
-			} else if (currentIndex === nElements - 1 && offset === 1){
+			} else if (currentImgIndex === nElements - 1 && offset === 1){
 				index = 0;
 			} else {
-				index = currentIndex + offset;
+				index = currentImgIndex + offset;
 			}
+            console.log(currentIndex);
 
 			return index;
 		}
