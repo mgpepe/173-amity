@@ -48,9 +48,7 @@ class StaticsController extends AppController {
         $this->set('isGallery', true);
     }
 
-	public function availability(){
-		$this->set('isAvailability', true);
-	}
+
 
     public function neighborhood() {
         $this->set('isNeighborhood', true);

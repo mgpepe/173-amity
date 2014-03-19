@@ -32,7 +32,7 @@
  */
 	Router::connect('/contacts', array('controller' => 'contacts', 'action' => 'add'));
 	Router::connect('/showme', array('controller' => 'contact_forms', 'action' => 'showme'));
-	Router::connect('/availability', array('controller' => 'statics', 'action' => 'availability'));
+	Router::connect('/availability', array('controller' => 'apartments', 'action' => 'availability'));
     Router::connect('/gallery', array('controller' => 'statics', 'action' => 'gallery'));
     Router::connect('/neighborhood', array('controller' => 'statics', 'action' => 'neighborhood'));
     Router::connect('/team', array('controller' => 'statics', 'action' => 'team'));
