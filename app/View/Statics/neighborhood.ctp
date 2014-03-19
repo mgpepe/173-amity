@@ -233,10 +233,10 @@
 <script>
     $(document).on('ready', function(){
         $.backstretch([
-            'app/webroot/img/neighborhood/1.jpg',
-            'app/webroot/img/neighborhood/2.jpg',
-            'app/webroot/img/neighborhood/3.jpg',
-            'app/webroot/img/neighborhood/4.jpg'
+            '/img/neighborhood/1.jpg',
+            '/img/neighborhood/2.jpg',
+            '/img/neighborhood/3.jpg',
+            '/img/neighborhood/4.jpg'
             ], {duration: 1000, fade: 300});
 
         $.backstretch('pause');

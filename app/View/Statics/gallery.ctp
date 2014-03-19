@@ -95,11 +95,11 @@
 <script>
     $(document).on('ready', function(){
         $.backstretch([
-            'app/webroot/img/gallery/1.jpg',
-            'app/webroot/img/gallery/2.jpg',
-            'app/webroot/img/gallery/3.jpg',
-            'app/webroot/img/gallery/4.jpg',
-            'app/webroot/img/gallery/5.jpg'
+            '/img/gallery/1.jpg',
+            '/img/gallery/2.jpg',
+            '/img/gallery/3.jpg',
+            '/img/gallery/4.jpg',
+            '/img/gallery/5.jpg'
             ], {duration: 1000, fade: 300});
 
         $.backstretch('pause');

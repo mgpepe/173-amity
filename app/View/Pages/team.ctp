@@ -5,7 +5,7 @@
 
                 <div class="row">
                     <div id="logo" class="small-bottom">
-                        <img src="app/webroot/img/logo.jpg" alt="logo" class="img-responsive">
+                        <img src="/img/logo.jpg" alt="logo" class="img-responsive">
                     </div>
                 </div>
 

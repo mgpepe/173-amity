@@ -1,7 +1,7 @@
 
 <div class="row">
 	<div id="logo" class="small-bottom">
-		<a href="/"><img src="/app/webroot/img/logo.jpg" alt="logo" class="img-responsive"></a>
+		<a href="/"><img src="/img/logo.jpg" alt="logo" class="img-responsive"></a>
 	</div>
 </div>
 

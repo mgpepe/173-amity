@@ -33,10 +33,10 @@
 <script>
 	$(document).on('ready', function(){
         $.backstretch([
-            'app/webroot/img/home/1.jpg',
-            'app/webroot/img/home/2.jpg',
-            'app/webroot/img/home/3.jpg',
-            'app/webroot/img/home/4.jpg'
+            '/img/home/1.jpg',
+            '/img/home/2.jpg',
+            '/img/home/3.jpg',
+            '/img/home/4.jpg'
             ], {duration: 1000, fade: 300});
 
         $.backstretch('pause');
