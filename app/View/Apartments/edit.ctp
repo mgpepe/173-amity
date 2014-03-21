@@ -27,7 +27,6 @@
 					echo $this->Form->input('status', array(
 									'options'=>array('Available'=>'Available', 'Unavailable'=>'Unavailable', 'In contract'=>'In contract'),
 									'empty'=>'(choose status)'));
-					echo $this->Form->input('floorplan');
 				?>
 				</fieldset>
 			<?php echo $this->Form->end(__('Submit')); ?>
