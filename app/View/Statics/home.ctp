@@ -3,7 +3,7 @@
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
-			
+			 
 				<div class="row">
 					<div class="content">
 						<h1 class="uppercase heading">173 amity st.</h1>
