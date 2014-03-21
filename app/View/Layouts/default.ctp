@@ -20,7 +20,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="container">
+<div class="container main-container">
 	<?php echo $this->Session->flash(); ?>
 	<?php echo $this->fetch('content'); ?>
 </div>

@@ -15,6 +15,7 @@
 body{
 	color: @brown-link;
 	background: #cecabd;
+	overflow-y: scroll;
 }
 a{
 	color: @brown-link;
@@ -42,8 +43,61 @@ h1{
 	font-size: 50px;
 }
 
-//
-
+.main-container {
+	max-width: 1024px;
+	.col-lg-3 {
+		width: 25%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+	@media (min-width: 1280px) {
+		max-width: 1170px;
+		.col-lg-3 {
+			width: 24%;
+		}
+		.col-md-3 {
+			width: 24%;
+		}
+	}
+	@media (min-width: 1460px) {
+		max-width: 1366px;
+		.col-lg-3 {
+			width: 20%;
+		}
+		.col-md-3 {
+			width: 20%;
+		}
+	}
+	@media (min-width: 1660px) {
+		max-width: 1460px;
+		.col-lg-3 {
+			width: 19%;
+		}
+		.col-md-3 {
+			width: 19%;
+		}
+	}
+	@media (min-width: 1860px) {
+		max-width: 1600px;
+				.col-lg-3 {
+			width: 19%;
+		}
+		.col-md-3 {
+			width: 19%;
+		}
+	}
+	@media (min-width: 1960px) {
+		max-width: 1800px;
+		.col-lg-3 {
+			width: 19%;
+		}
+		.col-md-3 {
+			width: 19%;
+		}
+	}
+	
+}
 // LOGO
 #logo {
 	@media (min-width: 600px) {
@@ -96,6 +150,13 @@ h1{
 	}
 
 }
+
+// #aside {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 100px;
+// }
+
 .timestext{
 	font-family: "Times New Roman";
 	font-size: 14px;
@@ -107,11 +168,11 @@ h1{
 	padding: 5px 15px;
 	text-align: right;
 	h1 {
-		font-size: 23pt;
+		font-size: 20pt;
 		color: @dark-brownish;
 	}
 	p {
-		font-size: 13pt;
+		font-size: 12pt;
 		font-family: times;
 		color: @dark-brownish;
 	}
@@ -119,10 +180,10 @@ h1{
 		position: relative;
 		p { 
 			font-family: 'Futura_lt_book';
-			font-size: 10pt; 
+			font-size: 8pt; 
 			position: absolute;
 			right: 90px;
-			top: -10px;
+			top: -2px;
 		}
 
 		.controls {
@@ -150,21 +211,21 @@ h1{
 		list-style: none;
 		padding: 0;
 		display: none;
-		font-size: 13pt;
+		font-size: 12pt;
 		font-family: times;
 		color: @dark-brownish;
-		line-height: 35pt;
+		line-height: 25pt;
 		margin: 10px 0 50px 0;
 		li {
 			position: relative;
 			padding-right: 35px;
 			div {
-				width: 20px;
-				height: 20px;
+				width: 15px;
+				height: 15px;
 				border-radius: 100%;
 				position: absolute;
-				right: 5px;
-				top: 13px;
+				right: 15px;
+				top: 10px;
 				bottom: 0;
 				margin: 0; 
 			}
@@ -217,6 +278,7 @@ h1{
 	margin-top: 100px;
 	text-align: center;
 	font-size: 14px;
+	width: 100%;
 	thead {
 		background: @beige;
 	}
@@ -226,6 +288,7 @@ h1{
 	td,
 	th {
 		padding: 10px 20px;
+		text-align: center;
 	}
 	td {
 		font-family: times;
@@ -271,8 +334,8 @@ h1{
 	}
 }
 
-.in-contacts {
-	font-size: 1.4em;
+h1.in-contacts {
+	font-size: 1.5em;
 }
 // GALLERY
 .features-button-open {
@@ -645,8 +708,8 @@ h1{
 #flashMessage {
 	position: absolute;
 	margin: 0;
-	left: 0;
 	right: 0;
+	font-size: 1.3em;
 }
 
 // helper classes

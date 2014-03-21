@@ -5,7 +5,7 @@
 			<?php echo $this->element('header'); ?>
 			
 				<div class="row">
-					<div class="contact-content" style="height: 200px;">
+					<div class="empty-content">
 					</div>
 				</div>
 		</div>

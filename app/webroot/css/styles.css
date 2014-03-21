@@ -5,6 +5,7 @@
 body {
   color: #4f4135;
   background: #cecabd;
+  overflow-y: scroll;
 }
 a {
   color: #4f4135;
@@ -22,6 +23,70 @@ a {
 h1 {
   font-family: 'Futura_lt_book';
   font-size: 50px;
+}
+.main-container {
+  max-width: 1024px;
+}
+.main-container .col-lg-3 {
+  width: 25%;
+}
+.main-container .col-md-3 {
+  width: 25%;
+}
+@media (min-width: 1280px) {
+  .main-container {
+    max-width: 1170px;
+  }
+  .main-container .col-lg-3 {
+    width: 24%;
+  }
+  .main-container .col-md-3 {
+    width: 24%;
+  }
+}
+@media (min-width: 1460px) {
+  .main-container {
+    max-width: 1366px;
+  }
+  .main-container .col-lg-3 {
+    width: 20%;
+  }
+  .main-container .col-md-3 {
+    width: 20%;
+  }
+}
+@media (min-width: 1660px) {
+  .main-container {
+    max-width: 1460px;
+  }
+  .main-container .col-lg-3 {
+    width: 19%;
+  }
+  .main-container .col-md-3 {
+    width: 19%;
+  }
+}
+@media (min-width: 1860px) {
+  .main-container {
+    max-width: 1600px;
+  }
+  .main-container .col-lg-3 {
+    width: 19%;
+  }
+  .main-container .col-md-3 {
+    width: 19%;
+  }
+}
+@media (min-width: 1960px) {
+  .main-container {
+    max-width: 1800px;
+  }
+  .main-container .col-lg-3 {
+    width: 19%;
+  }
+  .main-container .col-md-3 {
+    width: 19%;
+  }
 }
 @media (min-width: 600px) {
   
@@ -79,11 +144,11 @@ h1 {
   text-align: right;
 }
 .content h1 {
-  font-size: 23pt;
+  font-size: 20pt;
   color: #4b3627;
 }
 .content p {
-  font-size: 13pt;
+  font-size: 12pt;
   font-family: times;
   color: #4b3627;
 }
@@ -92,10 +157,10 @@ h1 {
 }
 .content .slider p {
   font-family: 'Futura_lt_book';
-  font-size: 10pt;
+  font-size: 8pt;
   position: absolute;
   right: 90px;
-  top: -10px;
+  top: -2px;
 }
 .content .slider .controls {
   list-style: none;
@@ -129,10 +194,10 @@ h1 {
   list-style: none;
   padding: 0;
   display: none;
-  font-size: 13pt;
+  font-size: 12pt;
   font-family: times;
   color: #4b3627;
-  line-height: 35pt;
+  line-height: 25pt;
   margin: 10px 0 50px 0;
 }
 .content .map-legend li {
@@ -140,12 +205,12 @@ h1 {
   padding-right: 35px;
 }
 .content .map-legend li div {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
   position: absolute;
-  right: 5px;
-  top: 13px;
+  right: 15px;
+  top: 10px;
   bottom: 0;
   margin: 0;
 }
@@ -189,6 +254,7 @@ h1 {
   margin-top: 100px;
   text-align: center;
   font-size: 14px;
+  width: 100%;
 }
 .availability-table thead {
   background: #beb8ac;
@@ -199,6 +265,7 @@ h1 {
 .availability-table td,
 .availability-table th {
   padding: 10px 20px;
+  text-align: center;
 }
 .availability-table td {
   font-family: times;
@@ -241,8 +308,8 @@ h1 {
 .availability-footer p {
   margin-top: 20px;
 }
-.in-contacts {
-  font-size: 1.4em;
+h1.in-contacts {
+  font-size: 1.5em;
 }
 .features-button-open {
   margin: auto;
@@ -592,8 +659,8 @@ h1 {
 #flashMessage {
   position: absolute;
   margin: 0;
-  left: 0;
   right: 0;
+  font-size: 1.3em;
 }
 .uppercase {
   text-transform: uppercase;

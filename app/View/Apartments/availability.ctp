@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-md-3 col-sm-4 col-lg-3">
+	<div id="aside" class="col-md-3 col-sm-4 col-lg-3">
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
@@ -11,7 +11,6 @@
 		</div>
 	</div>
 	<div class="col-md-9 col-sm-8 col-lg-9 very-big-bottom">
-		<div>
 		<table class="availability-table">
 			<thead>
 				<tr>
@@ -78,7 +77,6 @@
 				<?php }?>
 			</tbody>
 		</table>
-		</div>
 	</div>
 	<footer class="availability-footer very-small-font col-md-9 col-sm-8 col-lg-9">
 		<img src="/img/signature2.gif" alt="signature2" class="sig1">

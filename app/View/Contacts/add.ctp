@@ -13,7 +13,7 @@
                         </p>
 
                         <p class="big-bottom">
-                            <span class="uppercase small-font">some sort of title</span>
+                            <span class="uppercase small-font">then what is the title?</span>
                             <br>
                             <span class="times big-font">Timothy McCarthy</span>                  
                         </p>
@@ -37,107 +37,106 @@
 			<div class="row">
 				<?php echo $this->Form->create('Contact', array('class'=>'form-horizontal')); ?>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">First Name*</label>
-    <div class="col-sm-9">
-		<?php echo $this->Form->input('first_name', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">First Name*</label>
+                        <div class="col-sm-9">
+                    		<?php echo $this->Form->input('first_name', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">Last Name*</label>
-    <div class="col-sm-9">
-		<?php echo $this->Form->input('last_name', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">Last Name*</label>
+                        <div class="col-sm-9">
+                    		<?php echo $this->Form->input('last_name', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">Email*</label>
-    <div class="col-sm-9">
-		<?php echo $this->Form->input('email', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">Email*</label>
+                        <div class="col-sm-9">
+                    		<?php echo $this->Form->input('email', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">Address</label>
-    <div class="col-sm-9">
-		<?php echo $this->Form->input('address', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">Address</label>
+                        <div class="col-sm-9">
+                    		<?php echo $this->Form->input('address', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">Apt/City</label>
-    <div class="col-sm-4" style="padding-right:2px	">
-		<?php echo $this->Form->input('apt', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-    <div class="col-sm-5" style="padding-left:2px	">
-		<?php echo $this->Form->input('city', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">Apt/City</label>
+                        <div class="col-sm-4" style="padding-right:2px	">
+                    		<?php echo $this->Form->input('apt', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                        <div class="col-sm-5" style="padding-left:2px	">
+                    		<?php echo $this->Form->input('city', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">State/zip</label>
-    <div class="col-sm-5" style="padding-right:2px	">
-		<?php echo $this->Form->input('state', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-    <div class="col-sm-4" style="padding-left:2px	">
-		<?php echo $this->Form->input('zip', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">State/zip</label>
+                        <div class="col-sm-5" style="padding-right:2px	">
+                    		<?php echo $this->Form->input('state', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                        <div class="col-sm-4" style="padding-left:2px	">
+                    		<?php echo $this->Form->input('zip', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label uppercase">Contact Number</label>
-    <div class="col-sm-9">
-		<?php echo $this->Form->input('contact_number', array(
-		'div'=>false, 
-		'label'=>false, 
-		'class'=>'form-control', 
-		)); ?>
-    </div>
-</div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label uppercase">Contact Number</label>
+                        <div class="col-sm-9">
+                    		<?php echo $this->Form->input('contact_number', array(
+                    		'div'=>false, 
+                    		'label'=>false, 
+                    		'class'=>'form-control', 
+                    		)); ?>
+                        </div>
+                    </div>
 
-<div class="form-group">
-	<div class="col-sm-9 col-sm-offset-3">
-		<span class="uppercase">Required*</span>
-		<div class="pull-right">
-			<button type="submit" class="btn no-bdradius uppercase medium-font" style=" padding: 0 3px">Submit</button>
-		</div>
-		<div class="uppercase" style="text-align:left;margin-top: 40px;">View by appointments only<br><b style="font-family: sans-serif;">646 613 2624<b></div>
-	</div>
-</div>
-
+                    <div class="form-group">
+                    	<div class="col-sm-9 col-sm-offset-3">
+                    		<span class="uppercase">Required*</span>
+                    		<div class="pull-right">
+                    			<button type="submit" class="btn no-bdradius uppercase medium-font" style=" padding: 0 3px">Submit</button>
+                    		</div>
+                    		<div class="uppercase" style="text-align:left;margin-top: 40px;">View by appointments only<br><b style="font-family: sans-serif;">646 613 2624<b></div>
+                    	</div>
+                    </div>
 				<?php echo $this->Form->end(); ?>
 			</div>
 			

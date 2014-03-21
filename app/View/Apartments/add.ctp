@@ -15,6 +15,7 @@
 			<?php echo $this->Form->create('Apartment'); ?>
 			<fieldset>
 				<legend><?php echo __('Add Apartment'); ?></legend>
+				<div class="row">
 				<?php
 					echo $this->Form->input('name');
 					echo $this->Form->input('bedrooms');
@@ -28,6 +29,7 @@
 						'empty'=>'(choose status)'));
 					echo $this->Form->input('floorplan');
 				?>
+				</div>
 			</fieldset>
 				<?php echo $this->Form->end(__('Submit')); ?>
 		</div>
