@@ -11,7 +11,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, magnam, fugit mollitia natus aliquid aliquam necessitatibus aut vitae dolor deserunt perspiciatis non ullam voluptatum fuga quam? Distinctio consequatur nemo earum.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, voluptatibus similique error vel sint fugit beatae quod sapiente animi vero voluptate quasi deserunt veritatis provident aliquid. Numquam, corporis fuga suscipit.
                     </p>
-
+                    <button type="button" class="gallery-mobile-features is-futura">
+                        FEATURES
+                    </button>
                     <div class="slider">
                         <p class="uppercase">Click to view <br> more images</p>
                         <ul class="controls">
@@ -24,6 +26,7 @@
                             <li><a href="" class="right slider-control"></a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -31,8 +34,8 @@
 </div>
 
 <div>
-    <div class="features-button-open"></div>
-    <div class="features-window display-none">
+    <div class="features-button-open side-btn"></div>
+    <div id="main-f-window" class="features-window display-none">
         <div class="features-button-close"><span class="uppercase small-font">
             close
         </span></div>
@@ -110,7 +113,7 @@
             if (!element){
                 $('.slider-button').eq(index).addClass('current');
             } else {
-                $(element).addClass('current'); 
+                $(element).addClass('current');
             }
         }
 
@@ -156,7 +159,7 @@
             e.preventDefault();
             $.backstretch('show', 4);
             changeCurrentButton(this);
-        })
+        });
         // prev and next controls
         $('.left').click(function(e) {
             e.preventDefault();
@@ -173,7 +176,7 @@
             var index = getIndex(5, 1);
 
             changeCurrentButton(null, index);
-            
+
             $.backstretch('next');
         });
 
@@ -183,17 +186,21 @@
 
             featuresW.fadeToggle('fast', 'linear',function() {
                 featuresW.toggleClass('display-none');
-            })
+            });
         }
 
         $('.features-button-open').on('click', function(e) {
             e.preventDefault();
             toggleFeaturesWindow();
-        })
+        });
         $('.features-button-close').on('click', function(e) {
             e.preventDefault();
             toggleFeaturesWindow();
-        })
+        });
+        $('.gallery-mobile-features').on('click', function(e) {
+            e.preventDefault();
+            toggleFeaturesWindow();
+        });
 
     });
 </script>

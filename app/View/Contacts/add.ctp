@@ -3,19 +3,19 @@
 		<div class="container">
 
 			<?php  echo $this->element('header'); ?>
-			
+
 				<div class="row is-futura">
 					<div class="contact-content">
 						<p class="big-bottom">
                             <span class="uppercase small-font">director of sales</span>
                             <br>
-                            <span class="times big-font">Sean Turner</span>                  
+                            <span class="times big-font">Sean Turner</span>
                         </p>
 
                         <p class="big-bottom">
                             <span class="uppercase small-font">then what is the title?</span>
                             <br>
-                            <span class="times big-font">Timothy McCarthy</span>                  
+                            <span class="times big-font">Timothy McCarthy</span>
                         </p>
 
                         <p class="uppercase big-bottom small-font">Exclusive sales &amp; marketing</p>
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div class="contact-form col-md-6 col-sm-6 col-lg-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 vertical-center">
-	
+
 
 		<?php if (!$hide_form){ ?>
 			<div class="row">
@@ -33,7 +33,7 @@
 						<h1 class="in-contacts uppercase">Contact</h1>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<?php echo $this->Form->create('Contact', array('class'=>'form-horizontal')); ?>
 
@@ -41,9 +41,10 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">First Name*</label>
                         <div class="col-sm-9">
                     		<?php echo $this->Form->input('first_name', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'First Name',
                     		)); ?>
                         </div>
                     </div>
@@ -52,9 +53,10 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">Last Name*</label>
                         <div class="col-sm-9">
                     		<?php echo $this->Form->input('last_name', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'Last name',
                     		)); ?>
                         </div>
                     </div>
@@ -63,9 +65,10 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">Email*</label>
                         <div class="col-sm-9">
                     		<?php echo $this->Form->input('email', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'Email',
                     		)); ?>
                         </div>
                     </div>
@@ -74,9 +77,10 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">Address</label>
                         <div class="col-sm-9">
                     		<?php echo $this->Form->input('address', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'Address',
                     		)); ?>
                         </div>
                     </div>
@@ -85,16 +89,18 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">Apt/City</label>
                         <div class="col-sm-4" style="padding-right:2px	">
                     		<?php echo $this->Form->input('apt', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'Apartment',
                     		)); ?>
                         </div>
                         <div class="col-sm-5" style="padding-left:2px	">
                     		<?php echo $this->Form->input('city', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'City',
                     		)); ?>
                         </div>
                     </div>
@@ -103,16 +109,18 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">State/zip</label>
                         <div class="col-sm-5" style="padding-right:2px	">
                     		<?php echo $this->Form->input('state', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'State',
                     		)); ?>
                         </div>
                         <div class="col-sm-4" style="padding-left:2px	">
                     		<?php echo $this->Form->input('zip', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'Zip',
                     		)); ?>
                         </div>
                     </div>
@@ -121,9 +129,10 @@
                         <label for="inputEmail3" class="col-sm-3 control-label uppercase">Contact Number</label>
                         <div class="col-sm-9">
                     		<?php echo $this->Form->input('contact_number', array(
-                    		'div'=>false, 
-                    		'label'=>false, 
-                    		'class'=>'form-control', 
+                    		'div'=>false,
+                    		'label'=>false,
+                    		'class'=>'form-control',
+                            'placeholder'=>'Number'
                     		)); ?>
                         </div>
                     </div>
@@ -139,7 +148,7 @@
                     </div>
 				<?php echo $this->Form->end(); ?>
 			</div>
-			
+
 
 		<?php } else{ ?>
 			<div class="row">
@@ -152,7 +161,7 @@
 			</div>
 		<?php } ?>
 	</div>
-	
+
 </div>
 
 

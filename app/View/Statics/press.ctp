@@ -3,7 +3,7 @@
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
-			
+
 				<div class="row">
 					<div class="empty-content">
 					</div>
@@ -17,10 +17,10 @@
 				<img src="/img/logo-times.png"/>
 			</div>
 			<div class="col-md-7">
-				03/05/2014<br>
-				Article title goes here<br><br>
+				<p>03/05/2014</p>
+				<p>Article title goes here</p>
 
-				Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan. <br/>
+				<p>Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan.</p>
 
 				<a href="http://nytimes.com">Read More.</a>
 			</div>
@@ -33,7 +33,7 @@
 				03/05/2014<br>
 				Article title goes here<br><br>
 
-				Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan. <br/>
+				Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray <br>roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan. <br/>
 
 				<a href="http://nytimes.com">Read More.</a>
 			</div>
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 </div>
 
 

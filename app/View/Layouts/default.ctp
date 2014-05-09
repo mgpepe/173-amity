@@ -13,6 +13,8 @@
 		echo $this->fetch('script');
 	?>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<!-- <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-collapse.js"></script> -->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<?php echo $this->Html->css('styles'); ?>

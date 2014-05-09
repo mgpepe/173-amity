@@ -3,7 +3,7 @@
         <div class="container">
 
             <?php echo $this->element('header'); ?>
-            
+
                 <div class="row">
                     <div class="content">
                         <h1 class="neighborhood-heading uppercase">Cobble hill</h1>
@@ -16,6 +16,9 @@
                             <li>Retail <div class="retail-dot"></div></li>
                             <li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li>
                         </ul>
+                        <button type="button" class="gallery-mobile-features is-futura">
+                        MAP
+                        </button>
 
                         <div class="slider">
                             <p class="uppercase">Click to view <br> more images</p>
@@ -32,10 +35,10 @@
                 </div>
         </div>
     </div>
-    
+
 </div>
 
-<div class="neighborhood-map-open"></div>
+<div class="neighborhood-map-open side-btn"></div>
 <div class="map-wrapper">
     <div class="places">
         <!-- cafes -->
@@ -232,6 +235,16 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
     $(document).on('ready', function(){
+
+        var mapOpen       = $('.neighborhood-map-open'),
+            mapOpenMobile = $('.gallery-mobile-features'),
+            map           = $('.map'),
+            sliderControl = $('.slider-control'),
+            sliderButton  = $('.slider-button'),
+            mapLegend     = $('<ul class="map-legend"><li>Restaurants <div class="restaurants-dot"></div></li><li>Cafes <div class="cafes-dot"></div></li><li>Retail <div class="retail-dot"></div></li><li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li></ul>'),
+            allPlaces     = $('.place-of-interest'),
+            placesArrows  = $('.place-arrow');
+
         $.backstretch([
             '/img/neighborhood/1.jpg',
             '/img/neighborhood/2.jpg',
@@ -247,9 +260,9 @@
             if (!element){
                 $('.slider-button').eq(index).addClass('current');
             } else {
-                $(element).addClass('current'); 
+                $(element).addClass('current');
             }
-            
+
         }
 
         function getIndex(nElements, offset) {
@@ -267,6 +280,38 @@
             }
 
             return index;
+        }
+
+        function openMap() {
+            // disable controls
+            $('.slider-button').removeClass('current');
+            sliderButton.off('click');
+            sliderControl.off('click').on('click', function(e) {
+                e.preventDefault();
+                location.reload();
+            });
+
+            // change text and heading
+            $('.neighborhood-heading').text('places of interest ');
+            $('.neighborhood-text').fadeOut('fast', function() {
+                $('.map-legend').fadeIn('fast');
+            });
+
+            // switch the background img to the map
+            $('.backstretch').fadeOut('750',function() {
+                map.fadeIn('750');
+                allPlaces.fadeIn('500');
+            });
+
+            // attach on mouse hover handlers to the map markers
+            allPlaces.mouseover(function() {
+                $(this).find('.name').fadeIn('fast');
+                $(this).find('.place-arrow').fadeIn('fast');
+            });
+            allPlaces.mouseleave(function() {
+                $(this).find('.name').fadeOut('fast');
+                $(this).find('.place-arrow').fadeOut('fast');
+            });
         }
 
         // Buttons
@@ -304,56 +349,27 @@
         $('.right').click(function(e) {
             e.preventDefault();
 
-            var index = getIndex(4, 1)
+            var index = getIndex(4, 1);
 
             changeCurrentButton(null, index);
 
             $.backstretch('next');
         });
 
-        // show the map
-        var mapOpen       = $('.neighborhood-map-open'),
-            map           = $('.map'),
-            sliderControl = $('.slider-control'),
-            sliderButton  = $('.slider-button'),
-            mapLegend     = $('<ul class="map-legend"><li>Restaurants <div class="restaurants-dot"></div></li><li>Cafes <div class="cafes-dot"></div></li><li>Retail <div class="retail-dot"></div></li><li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li></ul>'),
-            allPlaces     = $('.place-of-interest'),
-            placesArrows  = $('.place-arrow');
 
         mapOpen.click(function(e) {
             e.preventDefault();
             // hide the open map button
             mapOpen.fadeOut('fast');
 
-            // disable controls
-            $('.slider-button').removeClass('current');
-            sliderButton.off('click');
-            sliderControl.off('click').on('click', function(e) {
-                e.preventDefault();
-                location.reload();
-            });
+            openMap();
+        });
+        mapOpenMobile.click(function(e) {
+            e.preventDefault();
+            // hide the open map button
+            mapOpenMobile.fadeOut('fast');
 
-            // change text and heading
-            $('.neighborhood-heading').text('places of interest ');
-            $('.neighborhood-text').fadeOut('fast', function() {
-                $('.map-legend').fadeIn('fast');
-            });
-
-            // switch the background img to the map
-            $('.backstretch').fadeOut('750',function() {
-                map.fadeIn('750');
-                allPlaces.fadeIn('500');
-            });
-
-            // attach on mouse hover handlers to the map markers
-            allPlaces.mouseover(function() {
-                $(this).find('.name').fadeIn('fast');
-                $(this).find('.place-arrow').fadeIn('fast');
-            });
-            allPlaces.mouseleave(function() {
-                $(this).find('.name').fadeOut('fast');
-                $(this).find('.place-arrow').fadeOut('fast');
-            });
-        })
+            openMap();
+        });
     });
 </script>
