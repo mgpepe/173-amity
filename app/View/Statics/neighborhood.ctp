@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-3 col-sm-4 col-lg-3">
-        <div class="container">
+        <div class="container neighborhood-map">
 
             <?php echo $this->element('header'); ?>
 
@@ -300,6 +300,9 @@
             // switch the background img to the map
             $('.backstretch').fadeOut('750',function() {
                 map.fadeIn('750');
+                map.css({
+                    "display":"block"
+                });
                 allPlaces.fadeIn('500');
             });
 

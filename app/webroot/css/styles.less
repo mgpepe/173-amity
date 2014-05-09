@@ -60,6 +60,21 @@ h1{
 	@media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
+		.neighborhood-map {
+			#logo {
+				position: fixed;
+				z-index: 9999;
+			}
+			.navbar-collapse {
+				position: fixed !important;
+				z-index: 998 !important;
+				margin-top: 45px;
+			}
+			.content {
+				margin-top: 180px;
+			}
+		}
+
 		.side-btn {
 			display: none;
 		}
@@ -68,8 +83,6 @@ h1{
 			z-index: 999;
 		}
 		.press-item {
-			//max-width: 320px;
-
 			margin: 0;
 			padding: 0 15px;
 			div {
@@ -115,18 +128,19 @@ h1{
 			padding-left: 0;
 			#logo {
 				width: 100%;
+				height: 45px;
 				background: #fff;
 				text-align: center;
 				margin-bottom: 0;
 				a {
 					display: block;
-					width: 20%;
+					width: 45px;
 					text-align: center;
 					margin: 0 auto;
 				}
 				img {
-					//width: 100%;
-					border: 0;
+					width: 45px;
+					height: auto;
 				}
 			}
 			.navbar-collapse {
@@ -210,6 +224,372 @@ h1{
 			}
 		}
 	}
+
+	/* iPhone 5 (portrait & landscape)----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px) {
+		.neighborhood-map {
+			#logo {
+				position: fixed;
+				z-index: 9999;
+			}
+			.navbar-collapse {
+				position: fixed !important;
+				z-index: 998 !important;
+				margin-top: 45px;
+			}
+			.content {
+				margin-top: 180px;
+			}
+		}
+
+		.side-btn {
+			display: none;
+		}
+		#main-f-window {
+			background: rgb(208,202,190);
+			z-index: 999;
+		}
+		.press-item {
+			margin: 0;
+			padding: 0 15px;
+			div {
+				padding: 0;
+			}
+			p {
+				margin: 0;
+			}
+		}
+		.press-item:first-child {
+			margin-top: 0;
+		}
+		.contact-form {
+			position: relative;
+			padding: 0 40px 10px 40px;
+			.col-sm-4 {
+				padding-right: 15px !important;
+				padding-left: 15px !important;
+			}
+			.col-sm-5 {
+				padding-right: 15px !important;
+				padding-left: 15px !important;
+			}
+		}
+		.team-window {
+			// position: relative;
+			// margin-top: 50px;
+			// width: 100%;
+			// .partners {
+			background: rgba(208,202,190,0.8);
+			position: relative;
+			.partners {
+				padding: 20px;
+				li {
+					font-size: 0.8em;
+				}
+			}
+			// }
+		}
+		.col-sm-4 {
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0;
+			#logo {
+				width: 100%;
+				height: 45px;
+				background: #fff;
+				text-align: center;
+				margin-bottom: 0;
+				a {
+					display: block;
+					width: 45px;
+					text-align: center;
+					margin: 0 auto;
+				}
+				img {
+					width: 45px;
+					height: auto;
+				}
+			}
+			.navbar-collapse {
+				position: absolute;
+				left: 0;
+				right: 0;
+				background: @dark-brownish;
+				.nav-list {
+					margin-bottom: 0;
+				}
+			}
+			.empty-content { display: none;}
+			.contact-content {
+				padding: 40px 0 0 0;
+
+			}
+			.content {
+				position: absolute;
+				// bottom: 0;
+				background: rgb(226, 221, 211);
+				text-align: left;
+				font-size: 1em;
+				margin-top: 260px;
+				h1 {
+					font-size: 1.5em;
+					margin-top: 80px;
+				}
+				p {
+					font-size: inherit;
+				}
+				.slider {
+					position: absolute;
+					top: 0;
+					left: -20px;
+					padding-top: 10px;
+					p {
+						font-size: 0.55em;
+						margin-top: 10px;
+						position: absolute;
+						left: 40px;
+						//margin-right: 10px;
+					}
+					.controls {
+						.slider-control {
+							width: 35px;
+							height: 35px;
+							background-size: 35px 35px;
+						}
+						.left {
+							margin-left: 20px;
+						}
+					}
+				}
+				.gallery-mobile-features {
+					display: block;
+					background: @dark-brownish;
+					width: 60px;
+					height: 35px;
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					color: #fff;
+					font-size: 0.8em;
+					border: 0;
+				}
+			}
+		}
+		.col-md-9 {
+			padding: 0;
+			font-size: 10px;
+			.availability-table {
+				margin: 0;
+				font-size: 0.9em;
+				th { font-size: 0.7em; }
+				th, td {
+					padding: 5px 0;
+				}
+				a {
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px)
+	and (orientation : landscape) {
+		.features {
+			width: 568px;
+		}
+	}
+	@media only screen
+	and (min-device-width : 360px)
+	and (max-device-width : 640px)
+	and (orientation : landscape) {
+		.features {
+			width: 640px;
+		}
+	}
+
+	/* iPhone 5 (landscape)----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px)
+	and (orientation : landscape) {
+	/* STYLES GO HERE */
+		.features {
+			width: 568px;
+		}
+	}
+
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 360px)
+	and (max-device-width : 640px) {
+	/* STYLES GO HERE */
+		.neighborhood-map {
+			#logo {
+				position: fixed;
+				z-index: 9999;
+			}
+			.navbar-collapse {
+				position: fixed !important;
+				z-index: 998 !important;
+				margin-top: 45px;
+			}
+			.content {
+				margin-top: 180px;
+			}
+		}
+		.side-btn {
+			display: none;
+		}
+		#main-f-window {
+			background: rgb(208,202,190);
+			z-index: 999;
+		}
+		.press-item {
+			margin: 0;
+			padding: 0 15px;
+			div {
+				padding: 0;
+			}
+			p {
+				margin: 0;
+			}
+		}
+		.press-item:first-child {
+			margin-top: 0;
+		}
+		.contact-form {
+			position: relative;
+			padding: 0 40px 10px 40px;
+			.col-sm-4 {
+				padding-right: 15px !important;
+				padding-left: 15px !important;
+			}
+			.col-sm-5 {
+				padding-right: 15px !important;
+				padding-left: 15px !important;
+			}
+		}
+		.team-window {
+			// position: relative;
+			// margin-top: 50px;
+			// width: 100%;
+			// .partners {
+			background: rgba(208,202,190,0.8);
+			position: relative;
+			.partners {
+				padding: 20px;
+				li {
+					font-size: 0.8em;
+				}
+			}
+			// }
+		}
+		.col-sm-4 {
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0;
+			#logo {
+				width: 100%;
+				height: 45px;
+				background: #fff;
+				text-align: center;
+				margin-bottom: 0;
+				a {
+					display: block;
+					width: 45px;
+					text-align: center;
+					margin: 0 auto;
+				}
+				img {
+					width: 45px;
+					height: auto;
+				}
+			}
+			.navbar-collapse {
+				position: absolute;
+				left: 0;
+				right: 0;
+				background: @dark-brownish;
+				.nav-list {
+					margin-bottom: 0;
+				}
+			}
+			.empty-content { display: none;}
+			.contact-content {
+				padding: 40px 0 0 0;
+
+			}
+			.content {
+				position: absolute;
+				// bottom: 0;
+				background: rgb(226, 221, 211);
+				text-align: left;
+				font-size: 1em;
+				margin-top: 260px;
+				h1 {
+					font-size: 1.5em;
+					margin-top: 80px;
+				}
+				p {
+					font-size: inherit;
+				}
+				.slider {
+					position: absolute;
+					top: 0;
+					left: -20px;
+					padding-top: 10px;
+					p {
+						font-size: 0.55em;
+						margin-top: 10px;
+						position: absolute;
+						left: 40px;
+						//margin-right: 10px;
+					}
+					.controls {
+						.slider-control {
+							width: 35px;
+							height: 35px;
+							background-size: 35px 35px;
+						}
+						.left {
+							margin-left: 20px;
+						}
+					}
+				}
+				.gallery-mobile-features {
+					display: block;
+					background: @dark-brownish;
+					width: 60px;
+					height: 35px;
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					color: #fff;
+					font-size: 0.8em;
+					border: 0;
+				}
+			}
+		}
+		.col-md-9 {
+			padding: 0;
+			font-size: 10px;
+			.availability-table {
+				margin: 0;
+				font-size: 0.9em;
+				th { font-size: 0.7em; }
+				th, td {
+					padding: 5px 0;
+				}
+				a {
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+
 	@media (min-width: 1280px) {
 		max-width: 1170px;
 		.col-lg-3 {
@@ -267,11 +647,11 @@ h1{
     	background: @dark-brownish;
     	border-radius: 0;
     	margin: 0;
-    	width: 20%;
+    	width: 45px;
     	height: 100%;
     	.icon-bar {
     		width: 80%;
-    		height: 8%;
+    		//height: 3%;
     		background: #fff;
     		margin: 6px auto;
     	}
@@ -610,7 +990,7 @@ h1.in-contacts {
 	left: 0;
 }
 .map {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	display: none;
@@ -625,7 +1005,7 @@ h1.in-contacts {
 // PLACES OF INTEREST
 .places {
 	.place-of-interest {
-		position: fixed;
+		position: absolute;
 		cursor: pointer;
 		width: 20px;
 		height: 20px;
