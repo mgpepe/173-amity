@@ -20,8 +20,6 @@
                             <li><a href="" class="first slider-button current"></a></li>
                             <li><a href="" class="second slider-button"></a></li>
                             <li><a href="" class="third slider-button"></a></li>
-                            <li><a href="" class="fourth slider-button"></a></li>
-                            <li><a href="" class="fifth slider-button"></a></li>
                             <li><a href="" class="left slider-control"></a></li>
                             <li><a href="" class="right slider-control"></a></li>
                         </ul>
@@ -74,7 +72,7 @@
                 <ul>
                     <li>Carrara porcelain wall and floor tiles</li>
                     <li>Alno walnut vanity with double under mounted sinks and Hansgrobe faucets</li>
-                    <li>Ceaserstone countertop in blizzard white</li>
+                    <li>Stellar white marble countertop. Honed finish.</li>
                     <li>Frameless glass shower enclosure</li>
                     <li>Recessed medicine cabinets by Robern</li>
                 </ul>
@@ -100,9 +98,7 @@
         $.backstretch([
             '/img/gallery/1.jpg',
             '/img/gallery/2.jpg',
-            '/img/gallery/3.jpg',
-            '/img/gallery/4.jpg',
-            '/img/gallery/5.jpg'
+            '/img/gallery/3.jpg'
             ], {duration: 1000, fade: 300});
 
         $.backstretch('pause');
@@ -148,16 +144,6 @@
         $('.third').click(function(e) {
             e.preventDefault();
             $.backstretch('show', 2);
-            changeCurrentButton(this);
-        });
-        $('.fourth').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 3);
-            changeCurrentButton(this);
-        });
-        $('.fifth').click(function(e) {
-            e.preventDefault();
-            $.backstretch('show', 4);
             changeCurrentButton(this);
         });
         // prev and next controls
