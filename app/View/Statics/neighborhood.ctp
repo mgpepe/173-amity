@@ -6,9 +6,9 @@
 
                 <div class="row">
                     <div class="content">
-                        <h1 class="neighborhood-heading uppercase">Cobble hill</h1>
+                        <h1 class="neighborhood-heading uppercase">Cobble Hill</h1>
                         <p class="neighborhood-text very-big-bottom">
-                            Feugiat ante non mattis sceleris- que. Suspendisse eu nisl venenatis nisi fermentum vestibulum. Donec pretium adipiscing orci, eu sagittis ipsum. Ut at venenatis odio. Sus- pendisse ac felis ut nulla accumsan tincidunt. Mauris sagittis rhoncus erat, non semper nisi mollis vitae. Aenean gravida ultrices libero vitae blandit. Etiam dignissim vel metus congue rutrum. Maecenas massa justo. Ut at venenatis odio. Suspendisse ac felis ut nulla accumsan tincidunt.
+                            Historic Cobble Hill is an intimate tree-lined neighborhood made up of 19th century architecture in a 40-block radius. Nearby, on Smith &amp; Court Streets and Atlantic Avenue there are a great mix of family-run restaurants, Italian meat markets, and boutiques alongside today’s modern, trendy and more well-known establishments. Cobble Hill Park sits as a neighborhood focal point, perfect for gathering and enjoying all of the serene beauty Cobble Hill has to offer.
                         </p>
                         <ul class="map-legend">
                             <li>Restaurants <div class="restaurants-dot"></div></li>
@@ -43,189 +43,232 @@
     <div class="places">
         <!-- cafes -->
         <div class="place-of-interest ted-and-honey">
-            <span class="name">Ted &amp; Honey</span>
-            <span class="place-arrow"></span>
             <div class="place cafes-dot"></div>
+            <span class="name" style="top: -15px;">Ted &amp; Honey</span>
+            <span class="place-arrow"></span>
+            
         </div>
         <div class="place-of-interest pedlar">
-            <span class="name">Café Pedlar</span>
-            <span class="place-arrow"></span>
             <div class="place cafes-dot"></div>
+            <span class="name" style="top: -21px;">Café Pedlar</span>
+            <span class="place-arrow"></span>
+            
         </div>
         <div class="place-of-interest chocolate-room">
+            <div class="place cafes-dot"></div>
             <span class="name">Chocolate Room</span>
             <span class="place-arrow"></span>
-            <div class="place cafes-dot"></div>
+            
         </div>
         <div class="place-of-interest bien-cult">
-            <span class="name" style="bottom: 12px">Bien Cult</span>
-            <span class="place-arrow" style="bottom: 15px"></span>
             <div class="place cafes-dot"></div>
+            <span class="name" style="top: -30px; left: -55px">Bien Cult</span>
+            <span class="place-arrow" style="bottom: 15px"></span>
+            
         </div>
         <!-- restaurants -->
         <div class="place-of-interest bocca-lupo">
+            <div class="place restaurants-dot"></div>
             <span class="name">Bocca Lupo</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest strong-place">
+            <div class="place restaurants-dot"></div>
             <span class="name">Strong Place</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest brucie">
+            <div class="place restaurants-dot"></div>
             <span class="name">Brucie</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest watty-and-meg">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: -5px">Watty &amp; Meg</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest lavara">
+            <div class="place restaurants-dot"></div>
             <span class="name">La Vara</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest joya">
+            <div class="place restaurants-dot"></div>
             <span class="name">Joya</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest pane-e-vino">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: 15px">Pane e Vino</span>
             <span class="place-arrow" style="bottom: 25px"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest ki-sushi">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: -40px">Ki Sushi</span>
             <span class="place-arrow" style="bottom: -10px"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest kyoto">
+            <div class="place restaurants-dot"></div>
             <span class="name">Kyoto</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest hibino">
+            <div class="place restaurants-dot"></div>
             <span class="name">Hibino</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest henry-public">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: -28px">Henry Public</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest colonie">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: 10px">Colonie</span>
             <span class="place-arrow" style="bottom: 12px"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest chez-moi">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: 8px">Chez Moi</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest red-gravy">
+            <div class="place restaurants-dot"></div>
             <span class="name" style="bottom: 5px">Red Gravy</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <div class="place-of-interest luizzo">
+            <div class="place restaurants-dot"></div>
             <span class="name">Luizzo's</span>
             <span class="place-arrow"></span>
-            <div class="place restaurants-dot"></div>
+            
         </div>
         <!-- retail -->
         <div class="place-of-interest barneys">
+            <div class="place retail-dot"></div>
             <span class="name" style="left: -64px">Barneys</span>
             <span class="place-arrow place-arrow-r" style="left: -5px"></span>
-            <div class="place retail-dot"></div>
+            
         </div>
         <div class="place-of-interest dianet">
+            <div class="place retail-dot"></div>
             <span class="name">Diane T</span>
             <span class="place-arrow"></span>
-            <div class="place retail-dot"></div>
+            
         </div>
         <div class="place-of-interest lily">
-            <span class="name">Lily</span>
-            <span class="place-arrow"></span>
             <div class="place retail-dot"></div>
+            <span class="name" style="left: 20px;">Lily</span>
+            <span class="place-arrow"></span>
+            
         </div>
         <div class="place-of-interest pink-pepper">
+            <div class="place retail-dot"></div>
             <span class="name">Pink Pepper</span>
             <span class="place-arrow"></span>
-            <div class="place retail-dot"></div>
+            
         </div>
         <div class="place-of-interest papel">
+            <div class="place retail-dot"></div>
             <span class="name">Papel</span>
             <span class="place-arrow"></span>
-            <div class="place retail-dot"></div>
+            
         </div>
         <div class="place-of-interest homage">
+            <div class="place retail-dot"></div>
             <span class="name">Homage</span>
             <span class="place-arrow"></span>
-            <div class="place retail-dot"></div>
+            
         </div>
         <div class="place-of-interest home-and-haven">
+            <div class="place retail-dot"></div>
             <span class="name">Home &amp; Haven</span>
             <span class="place-arrow"></span>
+            
+        </div>
+        <div class="place-of-interest rag-and-bone">
             <div class="place retail-dot"></div>
+            <span class="name">Rag &amp; Bone</span>
+            <span class="place-arrow"></span>
+            
         </div>
         <!-- grocery/bakery -->
         <div class="place-of-interest sahadi">
+            <div class="place grocery-dot"></div>
             <span class="name" style="bottom: 8px">Sahadi's</span>
             <span class="place-arrow"></span>
-            <div class="place grocery-dot"></div>
+            
         </div>
         <div class="place-of-interest damascus">
+            <div class="place grocery-dot"></div>
             <span class="name">Damascus</span>
             <span class="place-arrow"></span>
-            <div class="place grocery-dot"></div>
+            
         </div>
         <div class="place-of-interest trader-joe">
+            <div class="place grocery-dot"></div>
             <span class="name">Trader Joe's</span>
             <span class="place-arrow"></span>
-            <div class="place grocery-dot"></div>
+            
         </div>
         <div class="place-of-interest sugar-shop">
+            <div class="place grocery-dot"></div>
             <span class="name">Sugar Shop</span>
             <span class="place-arrow"></span>
-            <div class="place grocery-dot"></div>
+            
         </div>
         <div class="place-of-interest cobblestone-foods">
+            <div class="place grocery-dot"></div>
             <span class="name">Cobblestone Foods</span>
             <span class="place-arrow"></span>
-            <div class="place grocery-dot"></div>
+            
         </div>
         <div class="place-of-interest union-market">
+            <div class="place grocery-dot"></div>
             <span class="name">Union Market</span>
             <span class="place-arrow"></span>
-            <div class="place grocery-dot"></div>
+            
         </div>
         <!-- other -->
         <div class="place-of-interest henry-pilates">
+            <div class="place others-dot"></div>
             <span class="name">Henry St. Pilates</span>
             <span class="place-arrow"></span>
-            <div class="place others-dot"></div>
+            
         </div>
         <div class="place-of-interest mala-yoga">
+            <div class="place others-dot"></div>
             <span class="name">Mala yoga</span>
             <span class="place-arrow"></span>
-            <div class="place others-dot"></div>
+            
         </div>
         <div class="place-of-interest nysc">
+            <div class="place others-dot"></div>
             <span class="name">NYSC</span>
             <span class="place-arrow"></span>
-            <div class="place others-dot"></div>
+            
         </div>
         <div class="place-of-interest equinox">
-            <span class="name">Equinox</span>
+            <div class="place others-dot" ></div>
             <span class="place-arrow"></span>
-            <div class="place others-dot"></div>
+            <span class="name">Equinox TEST TEST</span>
+            
         </div>
+
     </div>
     <img class="map" src="/img/map.jpg" alt="map" width="1300" height="900">
 </div>
@@ -243,7 +286,8 @@
             sliderButton  = $('.slider-button'),
             mapLegend     = $('<ul class="map-legend"><li>Restaurants <div class="restaurants-dot"></div></li><li>Cafes <div class="cafes-dot"></div></li><li>Retail <div class="retail-dot"></div></li><li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li></ul>'),
             allPlaces     = $('.place-of-interest'),
-            placesArrows  = $('.place-arrow');
+            allPlacesX    = $('.place-of-interest .place');
+            //placesArrows  = $('.place-arrow');
 
         $.backstretch([
             '/img/neighborhood/1.jpg',
@@ -307,13 +351,12 @@
             });
 
             // attach on mouse hover handlers to the map markers
-            allPlaces.mouseover(function() {
+            allPlaces.mouseenter(function(e) {
+                // $(this).appendTo(".places");
                 $(this).find('.name').fadeIn('fast');
-                $(this).find('.place-arrow').fadeIn('fast');
             });
-            allPlaces.mouseleave(function() {
+            allPlaces.mouseleave(function(e) {
                 $(this).find('.name').fadeOut('fast');
-                $(this).find('.place-arrow').fadeOut('fast');
             });
         }
 

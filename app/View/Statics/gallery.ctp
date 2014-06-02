@@ -6,10 +6,9 @@
 
             <div class="row">
                 <div class="content">
-                    <h1 class="uppercase">residences</h1>
+                    <h1 class="uppercase">Residences</h1>
                     <p class="very-big-bottom">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, magnam, fugit mollitia natus aliquid aliquam necessitatibus aut vitae dolor deserunt perspiciatis non ullam voluptatum fuga quam? Distinctio consequatur nemo earum.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, voluptatibus similique error vel sint fugit beatae quod sapiente animi vero voluptate quasi deserunt veritatis provident aliquid. Numquam, corporis fuga suscipit.
+                        173 Amity perfectly personifies the kind of living that encompasses the uniqueness of Cobble Hill. The interiors feature open, windowed kitchens designed with top- of- the-line appliances by Bosch including a stainless steel refrigerator with French doors, as well as walnut and white-gloss lacquer cabinetry by Alno. The windowed master bathrooms are lined with marble and include beautiful “floating” walnut vanities. Double bay windows, flexible layouts and home offices are unique to the West line. The East apartments are perfect two bedrooms with exposures on three sides and include a one- of-a kind top floor apartment which has a stairway leading to a private rooftop terrace featuring amazing views over Brooklyn.
                     </p>
                     <button type="button" class="gallery-mobile-features is-futura">
                         FEATURES
