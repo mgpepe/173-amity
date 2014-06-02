@@ -1009,32 +1009,10 @@ h1.in-contacts {
 		cursor: pointer;
 		width: 20px;
 		height: 20px;
-		z-index: 989;
+		z-index: 100;
 		display: none;
 		vertical-align: middle;
-		.name {
-			display: none;
-			position: absolute;
-			left: 30px;
-			bottom: 0;
-			background: #fff;
-			padding: 5px;
-			z-index: 999;
-			font-family: 'Futura_lt_book';
-		}
-		.place-arrow {
-			position: absolute;
-			display: none;
-			left: 25px;
-			bottom: 8px;
-			width: 5px;
-			height: 12px;
-			background: url(../img/place-arrow.png) no-repeat;
-			background-size: 5px 12px;
-			z-index: 999;
-		}
-		.place-arrow-r { background: url(../img/place-arrow-r.png) no-repeat; }
-		.place {
+		.place-dot {
 			width: 10px;
 			height: 10px;
 			border-radius: 100%;
@@ -1042,154 +1020,310 @@ h1.in-contacts {
 		}
 	}
 }
+.places-names {
+	// display: none;
+	.name {
+		display: none;
+		z-index: 999;
+		position: absolute;
+		background-color: #fff;
+		white-space: pre;
+		margin-left: 30px;
+		font-family: 'Futura_lt_book';
+		padding: 5px;
+		line-height: 20px;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 7px;
+			left: -7px;
+	    	margin-top: 0;
+			width: 0;
+			height: 0;
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent;
+			border-right: 8px solid #fff;
+		}
+	}
+}
 // cafes
 .ted-and-honey {
 	top: 559px;
 	left: 687px;
+	&.name {
+		top: 551px;
+	}
 }
 .pedlar {
 	top: 561px;
 	left: 800px;
+	&.name {
+		top: 553px;
+	}
 }
 .chocolate-room {
 	top: 769px;
 	left: 749px;
+	&.name {
+		top: 761px;
+	}
 }
 .bien-cult {
 	top: 552px;
 	left: 982px;
+	&.name {
+		top: 544px;
+	}
 }
 // restaurants
 .bocca-lupo {
 	top: 547px;
 	left: 597px;
+	&.name {
+		top: 539px;
+	}
 }
 .strong-place {
 	top: 760px;
 	left: 727px;
+	&.name {
+		top: 752px;
+	}
 }
 .brucie {
 	top: 686px;
 	left: 755px;
+	&.name {
+		top: 678px;
+	}
 }
 .watty-and-meg {
 	top: 716px;
 	left: 744px;
+	&.name {
+		top: 708px;
+	}
 }
 .lavara {
 	top: 577px;
 	left: 686px;
+	&.name {
+		top: 569px;
+	}
 }
 .joya {
 	top: 598px;
 	left: 811px;
+	&.name {
+		top: 590px;
+	}
 }
 .pane-e-vino {
 	top: 692px;
 	left: 914px;
+	&.name {
+		top: 684px;
+	}
 }
 .ki-sushi {
 	top: 565px;
 	left: 975px;
+	&.name {
+		top: 557px;
+	}
 }
 .kyoto {
 	top: 559px;
 	left: 1004px;
+	&.name {
+		top: 551px;
+	}
 }
 .hibino {
 	top: 395px;
 	left: 652px;
+	&.name {
+		top: 387px;
+	}
 }
 .henry-public {
 	top: 376px;
 	left: 659px;
+	&.name {
+		top: 368px;
+	}
 }
 .colonie {
 	top: 347px;
 	left: 670px;
+	&.name {
+		top: 339px;
+	}
 }
 .chez-moi {
 	top: 353px;
 	left: 688px;
+	&.name {
+		top: 345px;
+	}
 }
 .red-gravy {
 	top: 361px;
 	left: 710px;
+	&.name {
+		top: 353px;
+	}
 }
 .luizzo {
 	top: 376px;
 	left: 746px;
+	&.name {
+		top: 368px;
+	}
 }
 // retail
 .barneys {
 	top: 423px;
 	left: 799px;
+	&.name {
+		top: 415px;
+	}
 }
 .dianet {
-	top: 509px;
-	left: 817px;
+	top: 506px;
+	left: 822px;
+	&.name {
+		top: 498px;
+	}
 }
 .lily {
 	top: 570px;
 	left: 816px;
+	&.name {
+		top: 562px;
+	}
 }
 .pink-pepper {
 	top: 586px;
 	left: 814px;
+	&.name {
+		top: 578px;
+	}
 }
 .papel {
 	top: 656px;
 	left: 791px;
+	&.name {
+		top: 648px;
+	}
 }
 .homage {
 	top: 634px;
 	left: 927px;
+	&.name {
+		top: 626px;
+	}
 }
 .home-and-haven {
 	top: 697px;
 	left: 936px;
+	&.name {
+		top: 689px;
+	}
+}
+.rag-and-bone {
+	top: 517px;
+	left: 817px;
+	&.name {
+		top: 509px;
+	}
+}
+.intermix {
+	top: 602px;
+	left: 957px;
+	&.name {
+		top: 594px;
+	}
 }
 // grocery/bakery
 .sahadi {
 	top: 399px;
 	left: 808px;
+	&.name {
+		top: 391px;
+	}
 }
 .damascus {
 	top: 409px;
 	left: 832px;
+	&.name {
+		top: 401px;
+	}
 }
 .trader-joe {
 	top: 437px;
 	left: 837px;
+	&.name {
+		top: 429px;
+	}
 }
 .sugar-shop {
 	top: 636px;
 	left: 646px;
+	&.name {
+		top: 628px;
+	}
 }
 .cobblestone-foods {
 	top: 610px;
 	left: 806px;
+	&.name {
+		top: 602px;
+	}
 }
 .union-market {
 	top: 817px;
 	left: 708px;
+	&.name {
+		top: 809px;
+	}
 }
 // others
 .henry-pilates {
 	top: 519px;
 	left: 596px;
+	&.name {
+		top: 511px;
+	}
 }
 .mala-yoga {
-	top: 526px;
-	left: 812px;
+	top: 527px;
+	left: 813px;
+	&.name {
+		top: 519px;
+	}
 }
 .nysc {
 	top: 535px;
 	left: 991px;
+	&.name {
+		top: 527px;
+	}
 }
 .equinox {
 	top: 234px;
 	left: 899px;
+	&.name {
+		top: 226px;
+	}
+}
+.the-bar-method {
+	top: 530px;
+	left: 979px;
+	&.name {
+		top: 522px;
+	}
 }
 // ALL CONTACTS TABLE
 .all-contacts-table {
