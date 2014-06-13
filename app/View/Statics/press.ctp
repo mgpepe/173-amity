@@ -14,41 +14,15 @@
 	<div class=" col-md-9 col-sm-9 col-lg-9 timestext"  >
 		<div class="row press-item">
 			<div class="col-md-5 press-image-box">
-				<img src="/img/logo-times.png"/>
+				<img src="/img/news-logo-g.png"/>
 			</div>
 			<div class="col-md-7">
-				<p>03/05/2014</p>
-				<p>Article title goes here</p>
+				<p>05/28/2014</p>
+				<p>Keeping an eye on Cobble Hill condo conversion 173 Amity Street</p>
 
-				<p>Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan.</p>
+				<p>Condo conversion 173 Amity Street in Cobble Hill is coming soon. The corner four-story limestone building traded in 2012 for...</p>
 
-				<a href="http://nytimes.com">Read More.</a>
-			</div>
-		</div>
-		<div class="row press-item">
-			<div class="col-md-5 press-image-box">
-				<img src="/img/logo-house.png"/>
-			</div>
-			<div class="col-md-7">
-				03/05/2014<br>
-				Article title goes here<br><br>
-
-				Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray <br>roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan. <br/>
-
-				<a href="http://nytimes.com">Read More.</a>
-			</div>
-		</div>
-		<div class="row press-item">
-			<div class="col-md-5 press-image-box">
-				<img src="/img/logo-real.png"/>
-			</div>
-			<div class="col-md-7">
-				03/05/2014<br>
-				Article title goes here<br><br>
-
-				Swag messenger bag blog scenester, readymade bespoke trust fund small batch lo-fi cray roof party. McSweeney's XOXO craft beer, salvia viral keffiyeh whatever Shoreditch cliche gastropub artisan. <br/>
-
-				<a href="http://nytimes.com">Read More.</a>
+				<a href="http://news.buzzbuzzhome.com/2014/05/173-amity-street.html">Read More</a>
 			</div>
 		</div>
 	</div>
