@@ -17,8 +17,7 @@
 				<img src="/img/news-logo-g.png"/>
 			</div>
 			<div class="col-md-7">
-				<p>05/28/2014</p>
-				<p>Keeping an eye on Cobble Hill condo conversion 173 Amity Street</p>
+				<p>05/28/2014<br/>Keeping an eye on Cobble Hill condo conversion 173 Amity Street</p>
 
 				<p>Condo conversion 173 Amity Street in Cobble Hill is coming soon. The corner four-story limestone building traded in 2012 for...</p>
 

@@ -69,7 +69,7 @@
             <div class="feature very-big-bottom">
                 <h3 class="uppercase">Master bath</h2>
                 <ul>
-                    <li>Carrara porcelain wall and floor tiles</li>
+                    <li>Stellar white marble floor and wall tiles, honed finish</li>
                     <li>Alno walnut vanity with double under mounted sinks and Hansgrobe faucets</li>
                     <li>Stellar white marble countertop. Honed finish.</li>
                     <li>Frameless glass shower enclosure</li>
