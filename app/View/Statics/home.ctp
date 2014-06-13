@@ -6,7 +6,7 @@
 			 
 				<div class="row">
 					<div class="content">
-						<h1 class="uppercase heading">173 Amityy st.</h1>
+						<h1 class="uppercase heading">173 Amity st.</h1>
 						<p class="very-big-bottom">
 							173 Amity, located in Historic Cobble Hill at the corner of Clinton and Amity Street, is a magnificent four-story limestone building built in 1900. The historic quality of the majestic exterior combined with the elegance of the interior design by PKSB Architects makes 173 Amity Street a rare find. Serene and private, the building features only two homes per floor, each containing two to three bedrooms. The spacious living and dining areas feature white ash hardwood floors and beautiful bay windows over- looking an intimate tree-lined street made up of 19th century architecture.
 						</p>
