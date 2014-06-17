@@ -19,7 +19,7 @@ class ApartmentsController extends AppController {
 	public function availability(){
 		$isAvailability = true;
 		$apartments = $this->Apartment->find('all');
-		
+
 		$this->set(compact('apartments', 'isAvailability'));
 	}
 

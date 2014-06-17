@@ -8,12 +8,13 @@
                 <div class="content">
                     <h1 class="uppercase">Residences</h1>
                     <p class="very-big-bottom">
-                        173 Amity perfectly personifies the kind of living that encompasses the uniqueness of Cobble Hill. The interiors feature open, windowed kitchens designed with top- of- the-line appliances by Bosch including a stainless steel refrigerator with French doors, as well as walnut and white-gloss lacquer cabinetry by Alno. The windowed master bathrooms are lined with marble and include beautiful “floating” walnut vanities. Double bay windows, flexible layouts and home offices are unique to the West line. The East apartments are perfect two bedrooms with exposures on three sides and include a one- of-a kind top floor apartment which has a stairway leading to a private rooftop terrace featuring amazing views over Brooklyn.
+                        173 Amity perfectly personifies the kind of living that encompasses the uniqueness of Cobble Hill. Interiors feature open, windowed kitchens designed with top- of- the-line appliances. Double bay windows, flexible layouts and home offices are unique to the West line. The East apartments are perfect two bedrooms with exposures on three sides and include a one- of-a kind top floor apartment which has a stairway leading to a private rooftop terrace featuring amazing views over Brooklyn.
                     </p>
                     <button type="button" class="gallery-mobile-features is-futura">
                         FEATURES
                     </button>
                     <div class="slider">
+                        <button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
                         <p class="uppercase">Click to view <br> more images</p>
                         <ul class="controls">
                             <li><a href="" class="first slider-button current"></a></li>
@@ -23,7 +24,6 @@
                             <li><a href="" class="right slider-control"></a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -38,29 +38,28 @@
         </span></div>
         <div class="features">
             <div class="feature very-big-bottom">
-                <h3 class="uppercase">Main spaces</h2>
+                <h3 class="uppercase">RESIDENTIAL FEATURES</h2>
                 <ul>
                     <li>Bay windows</li>
                     <li>White ash hardwood floors</li>
                     <li>Video intercom system</li>
-                    <li>interior architecture and design by PKSB</li>
+                    <li>Interior architecture and design by PKSB</li>
                     <li>Windowed kitchens and master baths</li>
                     <li>Bosch washer/dryer</li>
-                    <li>Central heating and AC</li>
+                    <li>Central heating and air conditioning</li>
                     <li>Private storage</li>
                     <li>Charming landmark street</li>
                 </ul>
             </div>
             <div class="feature very-big-bottom">
-                <h3 class="uppercase">Kitchens</h2>
+                <h3 class="uppercase">Kitchen</h2>
                 <ul>
-                    <li>Custom Alno white gloss lacquerand walnut cabinetry</li>
+                    <li>Custom Alno white gloss lacquer and walnut cabinetry</li>
                     <li>Ceasarstone countertops in blizzard white</li>
                     <li>Glass tile backsplash - gloss finish</li>
                     <li>Bosch dual fuel stainless steel range</li>
-                    <li>36" French door stainless steel Bosch refrigerator</li>
                     <li>Fully integrated Bosch dishwasher</li>
-                    <li>Hansgrobe "Tails" faucet</li>
+                    <li>Hansgrohe "Tails" faucet</li>
                     <li>Dacor microwave drawer</li>
                     <li>"Fabinata" pendant lights by Elgo</li>
                     <li>Garbage disposal</li>
@@ -70,8 +69,8 @@
                 <h3 class="uppercase">Master bath</h2>
                 <ul>
                     <li>Stellar white marble floor and wall tiles, honed finish</li>
-                    <li>Alno walnut vanity with double under mounted sinks and Hansgrobe faucets</li>
-                    <li>Stellar white marble countertop. Honed finish.</li>
+                    <li>Alno walnut vanity with double under mounted sinks and Hansgrohe faucets</li>
+                    <li>Stellar white marble countertop - honed finish.</li>
                     <li>Frameless glass shower enclosure</li>
                     <li>Recessed medicine cabinets by Robern</li>
                 </ul>
@@ -79,12 +78,12 @@
             <div class="feature very-big-bottom">
                 <h3 class="uppercase">Second bath</h2>
                 <ul>
-                    <li>Lazar marble white wall tiles</li>
+                    <li>Lazer marble white wall tiles</li>
                     <li>Pantheon porcelain floor tiles</li>
                     <li>Floating walnut vanity by Alno</li>
                     <li>Hansgrohe faucets</li>
                     <li>Ceaserstone countertop in blizzard white</li>
-                    <li>Recessed medicine cabinet by Robem</li>
+                    <li>Recessed medicine cabinet by Robern</li>
                 </ul>
             </div>
         </div>

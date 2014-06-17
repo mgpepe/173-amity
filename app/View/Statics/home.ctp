@@ -3,15 +3,18 @@
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
-			 
+
 				<div class="row">
 					<div class="content">
-						<h1 class="uppercase heading">173 Amity st.</h1>
-						<p class="very-big-bottom">
-							173 Amity, located in Historic Cobble Hill at the corner of Clinton and Amity Street, is a magnificent four-story limestone building built in 1900. The historic quality of the majestic exterior combined with the elegance of the interior design by PKSB Architects makes 173 Amity Street a rare find. Serene and private, the building features only two homes per floor, each containing two to three bedrooms. The spacious living and dining areas feature white ash hardwood floors and beautiful bay windows over- looking an intimate tree-lined street made up of 19th century architecture.
-						</p>
+						<div class="stuff">
+							<h1 class="uppercase heading">173 Amity st.</h1>
+							<p class="very-big-bottom">
+								173 Amity, located in Historic Cobble Hill at the corner of Clinton and Amity Street, is a magnificent four-story limestone building built in 1900. The historic quality of the majestic exterior combined with the elegance of the interior design by PKSB Architects makes 173 Amity Street a rare find. Serene and private, the building features only two homes per floor, each containing two to three bedrooms. The spacious living and dining areas feature beautiful bay windows over- looking an intimate tree-lined street made up of 19th century architecture.
+							</p>
+						</div>
 
 						<div class="slider">
+							<button type="button" id="toggle-menu">MENU</button>
 							<p class="uppercase">Click to view <br> more images</p>
 							<ul class="controls">
 								<li><a href="" class="first slider-button current"></a></li>
@@ -26,7 +29,7 @@
 				</div>
 		</div>
 	</div>
-	
+
 </div>
 
 <script src="js/jquery.backstretch.min.js"></script>
@@ -47,9 +50,9 @@
 			if (!element){
 				$('.slider-button').eq(index).addClass('current');
 			} else {
-				$(element).addClass('current');	
+				$(element).addClass('current');
 			}
-			
+
 		}
 
 		function getIndex(nElements, offset) {
@@ -65,7 +68,6 @@
 			} else {
 				index = currentImgIndex + offset;
 			}
-            console.log(currentIndex);
 
 			return index;
 		}
@@ -105,7 +107,7 @@
 		$('.right').click(function(e) {
 			e.preventDefault();
 
-			var index = getIndex(4, 1)
+			var index = getIndex(4, 1);
 
 			changeCurrentButton(null, index);
 

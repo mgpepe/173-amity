@@ -3,7 +3,7 @@
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
-			
+
 			<div class="row">
                 <div class="empty-content">
                 </div>

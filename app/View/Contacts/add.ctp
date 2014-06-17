@@ -7,15 +7,15 @@
 				<div class="row is-futura">
 					<div class="contact-content">
 						<p class="big-bottom">
-                            <span class="uppercase small-font">director of sales</span>
+                            <span class="times big-font">Sean Murphy Turner</span>
                             <br>
-                            <span class="times big-font">Sean Turner</span>
+                            <span class="uppercase small-font"><a href="sturner@stribling.com">sturner@stribling.com</a></span>
                         </p>
 
                         <p class="big-bottom">
-                            <span class="uppercase small-font">then what is the title?</span>
-                            <br>
                             <span class="times big-font">Timothy McCarthy</span>
+                            <br>
+                            <span class="uppercase small-font"><a href="tmccarthy@stribling.com">tmccarthy@stribling.com</a></span>
                         </p>
 
                         <p class="uppercase big-bottom small-font">Exclusive sales &amp; marketing</p>
@@ -143,7 +143,13 @@
                     		<div class="pull-right">
                     			<button type="submit" class="btn no-bdradius uppercase medium-font" style=" padding: 0 3px">Submit</button>
                     		</div>
-                    		<div class="uppercase" style="text-align:left;margin-top: 40px;">View by appointments only<br><b style="font-family: sans-serif;">646 613 2624<b></div>
+                    		<div class="uppercase" style="text-align:left;margin-top: 40px;">
+                                View by appointments only
+                                <br>
+                                <b style="font-family: sans-serif;">646 613 2624<b>
+                                <br>
+                                <a href="mailto: info@173amitystreet.com">info@173amitystreet.com</a>
+                                </div>
                     	</div>
                     </div>
 				<?php echo $this->Form->end(); ?>

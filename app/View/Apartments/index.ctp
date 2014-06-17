@@ -3,7 +3,7 @@
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
-			
+
 			<div class="row">
                 <div class="empty-content">
                 </div>
@@ -23,8 +23,8 @@
 					<th class="uppercase"><?php echo ('Estimated<br/>Monthly<br/>Taxes'); ?></th>
 					<th class="uppercase"><?php echo ('Estimated<br/>Monthly<br/>Common<br/>Charges'); ?></th>
 					<th class="uppercase"><?php echo ('status'); ?></th>
-					<th class="actions"><?php echo __('Actions'); ?></th>	
-				</tr>				
+					<th class="actions"><?php echo __('Actions'); ?></th>
+				</tr>
 			</thead>
 			<?php foreach ($apartments as $apartment): ?>
 			<tr>

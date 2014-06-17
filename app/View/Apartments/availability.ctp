@@ -3,7 +3,7 @@
 		<div class="container">
 
 			<?php echo $this->element('header'); ?>
-			
+
 			<div class="row">
                 <div class="empty-content">
                 </div>
@@ -17,12 +17,12 @@
 			  		<th class="uppercase">Residence</th>
 			  		<th class="uppercase">Bedrooms</th>
 			  		<th class="uppercase">Baths</th>
-			  		<th class="uppercase">Interior<br/>Sq.Ft</th>
+			  		<th class="uppercase">Interior<br>Sq.Ft</th>
 			  		<th class="uppercase">Price</th>
 			  		<th class="uppercase">Estimated<br/>Monthly<br/>Taxes</th>
 			  		<th class="uppercase">Estimated<br/>Monthly<br/>Common<br/>Charges</th>
 			  		<th class="uppercase">Status</th>
-			  	</tr>			
+			  	</tr>
 			</thead>
 			<tbody>
 				<?php foreach ($apartments as $a){ ?>
@@ -52,7 +52,7 @@
 				  		</td>
 				  		<td>
 				  			<span>
-				  				<?php 
+				  				<?php
 				  				if($a['Apartment']['status']=='Available' or $a['Apartment']['status']=='Unavailable'){
 				  					echo $a['Apartment']['taxes'];
 				  				}else {
@@ -62,7 +62,7 @@
 				  		</td>
 				  		<td>
 				  			<span>
-				  				<?php 
+				  				<?php
 				  				if($a['Apartment']['status']=='Available' or $a['Apartment']['status']=='Unavailable'){
 				  					echo $a['Apartment']['common_charges'];
 				  				}else {
@@ -83,5 +83,5 @@
 		<img src="/img/signature.gif" alt="signture" class="sig2">
 		<p>All dimensions are appropriate and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. Plans and dimensions may contain minor variations from floor to floor. This is not an offerig, 173 Amity LLC something something. The complete offering terms arein an offering plan available from sponsor. File CD13-0027</p>
 	</footer>
-	
+
 </div>

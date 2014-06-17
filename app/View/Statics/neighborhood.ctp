@@ -6,21 +6,24 @@
 
                 <div class="row">
                     <div class="content">
-                        <h1 class="neighborhood-heading uppercase">Cobble Hill</h1>
-                        <p class="neighborhood-text very-big-bottom">
-                            Historic Cobble Hill is an intimate tree-lined neighborhood made up of 19th century architecture in a 40-block radius. Nearby, on Smith &amp; Court Streets and Atlantic Avenue there are a great mix of family-run restaurants, Italian meat markets, and boutiques alongside today’s modern, trendy and more well-known establishments. Cobble Hill Park sits as a neighborhood focal point, perfect for gathering and enjoying all of the serene beauty Cobble Hill has to offer.
-                        </p>
-                        <ul class="map-legend">
-                            <li>Restaurants <div class="restaurants-dot"></div></li>
-                            <li>Cafés <div class="cafes-dot"></div></li>
-                            <li>Retail <div class="retail-dot"></div></li>
-                            <li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li>
-                        </ul>
+                        <div class="stuff">
+                            <h1 class="neighborhood-heading uppercase">neighborhood</h1>
+                            <p class="neighborhood-text very-big-bottom">
+                                Historic Cobble Hill is an intimate tree-lined neighborhood made up of 19th century architecture in a 40-block radius. Nearby, on Smith &amp; Court Streets and Atlantic Avenue there are a great mix of family-run restaurants, Italian meat markets, and boutiques alongside today’s modern, trendy and more well-known establishments. Cobble Hill Park sits as a neighborhood focal point, perfect for gathering and enjoying all of the serene beauty Cobble Hill has to offer.
+                            </p>
+                            <ul class="map-legend">
+                                <li>Restaurants <div class="restaurants-dot"></div></li>
+                                <li>Cafés <div class="cafes-dot"></div></li>
+                                <li>Retail <div class="retail-dot"></div></li>
+                                <li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li>
+                            </ul>
+                        </div>
                         <button type="button" class="gallery-mobile-features is-futura">
                         MAP
                         </button>
 
                         <div class="slider">
+                            <button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
                             <p class="uppercase">Click to view <br> more images</p>
                             <ul class="controls">
                                 <li><a href="" class="first slider-button current"></a></li>
@@ -224,7 +227,13 @@
             sliderControl = $('.slider-control'),
             sliderButton  = $('.slider-button'),
             mapLegend     = $('<ul class="map-legend"><li>Restaurants <div class="restaurants-dot"></div></li><li>Cafes <div class="cafes-dot"></div></li><li>Retail <div class="retail-dot"></div></li><li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li></ul>'),
-            allPlaces     = $('.place-of-interest');
+            allPlaces     = $('.place-of-interest'),
+            menuToggleBtn = $('#toggle-menu'),
+            logo          = $('#logo'),
+            stuff         = $('.stuff'),
+            content       = $('.content'),
+            navMenu       = $('.nav-list'),
+            hidden        = false;
 
         $.backstretch([
             '/img/neighborhood/1.jpg',
@@ -338,6 +347,29 @@
             changeCurrentButton(null, index);
 
             $.backstretch('next');
+        });
+        // Menu toggle
+        menuToggleBtn.on('click', function(e) {
+            stuff.fadeToggle('fast', function() {
+
+                if (hidden) {
+                    content.css({
+                        'padding': '5px 15px 5px 15px',
+                        'background': 'rgba(226, 221, 211, 0.8)',
+                    });
+                    $(e.target).text('VIEW FULL IMAGE');
+                    hidden = false;
+                } else {
+                    content.css({
+                        'padding': '0',
+                        'background': 'none',
+                    });
+                    $(e.target).text('MENU');
+                    hidden = true;
+                }
+            });
+            navMenu.fadeToggle('fast');
+            logo.fadeToggle('fast');
         });
 
 
