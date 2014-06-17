@@ -13,7 +13,7 @@ class ApartmentsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator', 'RequestHandler'); 
 
 
 	public function availability(){
@@ -32,6 +32,25 @@ class ApartmentsController extends AppController {
 	public function index() {
 		$this->Apartment->recursive = 0;
 		$this->set('apartments', $this->Paginator->paginate());
+	}
+
+	// public function dwnld($id=null){
+
+	// 	$this->response->download('/files/floorplans/2E_06-16.pdf');
+	// }
+
+	public function dwnld($id) {
+	    $a = $this->Apartment->findById($id);
+	    if($a){
+	    	$path = 'files/floorplans/';
+	    	$this->response->file($path.$a['Apartment']['floorplan'],
+		    	array('download' => true, 'name' => $a['Apartment']['floorplan'])
+		    );
+		    // Return response object to prevent controller from trying to render
+		    // a view
+		    return $this->response;	
+	    }
+	    
 	}
 
 /**

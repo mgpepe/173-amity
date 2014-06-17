@@ -27,10 +27,15 @@
 			<tbody>
 				<?php foreach ($apartments as $a){ ?>
 					<tr>
-						<td>
+						<td class="uppercase">
 			  				<span class="uppercase bolded"><?php echo $a['Apartment']['name'] ?></span>
+			  				<br/>
+				  			Floorplan
 				  			<br>
-				  			<a class="uppercase small-font floor-link" href= <?php echo '"' . $a['Apartment']['floorplan'] . '"'?>>floor plan</a>
+				  			<a class="uppercase small-font floor-link" href="<?php echo '/files/floorplans/' . $a['Apartment']['floorplan'] ?>">View</a> /
+				  			<?php echo $this->Html->link('Download', array('controller'=>'apartments', 'action'=>'dwnld',  $a['Apartment']['id'] ), 
+				  				array('class'=>'uppercase small-font floor-link',)
+				  			); ?>
 				  		</td>
 				  		<td>
 				  			<span><?php echo $a['Apartment']['bedrooms'] ?></span>
@@ -39,7 +44,7 @@
 				  			<span><?php echo $a['Apartment']['baths'] ?></span>
 				  		</td>
 				  		<td>
-				  			<span class="uppercase"><?php echo $a['Apartment']['interior'] ?></span>
+				  			<span class="uppercase"><?php echo htmlspecialchars_decode($a['Apartment']['interior']);  ?></span>
 				  		</td>
 				  		<td>
 				  			<span class="uppercase">
