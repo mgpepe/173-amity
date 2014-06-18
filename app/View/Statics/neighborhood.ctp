@@ -248,6 +248,19 @@
 
         $.backstretch('pause');
 
+        function isMobile() {
+            width   = window.innerWidth;
+            height = window.innerHeight;
+
+            if(width <= 800 && height <= 640) {
+                return true;
+            } else if (width <= 600 && height >= 854 && height <= 1024) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
         function changeCurrentButton(element, index) {
             $('.slider-button').removeClass('current');
 
@@ -354,22 +367,27 @@
         });
         // Menu toggle
         menuToggleBtn.on('click', function(e) {
-            content.fadeToggle();
-            navMenu.fadeToggle();
-            logo.fadeToggle();
                 if (hidden) {
                     $(e.target).text(btnTxt);
                     hidden = false;
-                    slider.css({
-                        'top': '260px'
-                    });
+                    if (isMobile()) {
+                        slider.css({
+                            'top': '260px'
+                        });
+                    }
                 } else {
                     $(e.target).text('MENU');
                     hidden = true;
-                    slider.css({
-                        'top': '0px'
-                    });
+                    if (isMobile()) {
+                        slider.css({
+                            'top': '0'
+                        });
+                    }
                 }
+            content.fadeToggle();
+            navMenu.fadeToggle();
+            logo.fadeToggle(function() {
+            });
         });
 
 
@@ -384,7 +402,7 @@
             e.preventDefault();
             // hide the open map button
             mapOpenMobile.fadeOut('fast');
-
+            btnTxt = "HIDE MENU";
             openMap();
         });
     });

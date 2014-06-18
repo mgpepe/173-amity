@@ -110,6 +110,19 @@
 
         $.backstretch('pause');
 
+        function isMobile() {
+            width   = window.innerWidth;
+            height = window.innerHeight;
+
+            if(width <= 800 && height <= 640) {
+                return true;
+            } else if (width <= 600 && height >= 854 && height <= 1024) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
         function changeCurrentButton(element, index) {
             $('.slider-button').removeClass('current');
 
@@ -176,20 +189,27 @@
         menuToggleBtn.on('click', function(e) {
             content.fadeToggle();
             navMenu.fadeToggle();
-            logo.fadeToggle();
+            logo.fadeToggle(function() {
+
                 if (hidden) {
                     $(e.target).text("VIEW FULL IMAGE");
                     hidden = false;
-                    slider.css({
-                        'top': '260px'
-                    });
+                    if (isMobile()) {
+                        slider.css({
+                            'top': '260px'
+                        });
+                    }
+
                 } else {
                     $(e.target).text('MENU');
                     hidden = true;
-                    slider.css({
-                        'top': '0px'
-                    });
+                    if (isMobile()) {
+                        slider.css({
+                            'top': '0'
+                        });
+                    }
                 }
+            });
         });
 
         // Feautures window
