@@ -13,19 +13,21 @@
                     <button type="button" class="gallery-mobile-features is-futura">
                         FEATURES
                     </button>
-                    <div class="slider">
-                        <button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
-                        <p class="uppercase">Click to view <br> more images</p>
-                        <ul class="controls">
-                            <li><a href="" class="first slider-button current"></a></li>
-                            <li><a href="" class="second slider-button"></a></li>
-                            <li><a href="" class="third slider-button"></a></li>
-                            <li><a href="" class="left slider-control"></a></li>
-                            <li><a href="" class="right slider-control"></a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="slider">
+            <button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
+            <p class="uppercase">Click to view <br> more images</p>
+            <ul class="controls">
+                <li><a href="" class="first slider-button current"></a></li>
+                <li><a href="" class="second slider-button"></a></li>
+                <li><a href="" class="third slider-button"></a></li>
+                <li><a href="" class="left slider-control"></a></li>
+                <li><a href="" class="right slider-control"></a></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -93,6 +95,13 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
     $(document).on('ready', function(){
+        var menuToggleBtn = $('#toggle-menu'),
+            logo          = $('#logo'),
+            slider        = $('.slider'),
+            content       = $('.content'),
+            navMenu       = $('.nav-list'),
+            hidden        = false;
+
         $.backstretch([
             '/img/gallery/1.jpg',
             '/img/gallery/2.jpg',
@@ -148,7 +157,7 @@
         $('.left').click(function(e) {
             e.preventDefault();
 
-            var index = getIndex(5, -1);
+            var index = getIndex(3, -1);
 
             changeCurrentButton(null, index);
 
@@ -157,11 +166,30 @@
         $('.right').click(function(e) {
             e.preventDefault();
 
-            var index = getIndex(5, 1);
+            var index = getIndex(3, 1);
 
             changeCurrentButton(null, index);
 
             $.backstretch('next');
+        });
+        // Menu toggle
+        menuToggleBtn.on('click', function(e) {
+            content.fadeToggle();
+            navMenu.fadeToggle();
+            logo.fadeToggle();
+                if (hidden) {
+                    $(e.target).text("VIEW FULL IMAGE");
+                    hidden = false;
+                    slider.css({
+                        'top': '260px'
+                    });
+                } else {
+                    $(e.target).text('MENU');
+                    hidden = true;
+                    slider.css({
+                        'top': '0px'
+                    });
+                }
         });
 
         // Feautures window

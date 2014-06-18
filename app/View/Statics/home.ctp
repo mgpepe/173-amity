@@ -12,29 +12,36 @@
 								173 Amity, located in Historic Cobble Hill at the corner of Clinton and Amity Street, is a magnificent four-story limestone building built in 1900. The historic quality of the majestic exterior combined with the elegance of the interior design by PKSB Architects makes 173 Amity Street a rare find. Serene and private, the building features only two homes per floor, each containing two to three bedrooms. The spacious living and dining areas feature beautiful bay windows over- looking an intimate tree-lined street made up of 19th century architecture.
 							</p>
 						</div>
-
-						<div class="slider">
-							<button type="button" id="toggle-menu">MENU</button>
-							<p class="uppercase">Click to view <br> more images</p>
-							<ul class="controls">
-								<li><a href="" class="first slider-button current"></a></li>
-								<li><a href="" class="second slider-button"></a></li>
-								<li><a href="" class="third slider-button"></a></li>
-								<li><a href="" class="fourth slider-button"></a></li>
-								<li><a href="" class="left slider-control"></a></li>
-								<li><a href="" class="right slider-control"></a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 		</div>
 	</div>
-
+	<div class="col-md-3">
+		<div class="slider">
+			<button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
+			<p class="uppercase">Click to view <br> more images</p>
+			<ul class="controls">
+				<li><a href="" class="first slider-button current"></a></li>
+				<li><a href="" class="second slider-button"></a></li>
+				<li><a href="" class="third slider-button"></a></li>
+				<li><a href="" class="fourth slider-button"></a></li>
+				<li><a href="" class="left slider-control"></a></li>
+				<li><a href="" class="right slider-control"></a></li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <script src="js/jquery.backstretch.min.js"></script>
 <script>
 	$(document).on('ready', function(){
+		var menuToggleBtn = $('#toggle-menu'),
+            logo          = $('#logo'),
+            slider        = $('.slider'),
+            content       = $('.content'),
+            navMenu       = $('.nav-list'),
+            hidden        = false;
+
         $.backstretch([
             '/img/home/1.jpg',
             '/img/home/2.jpg',
@@ -113,6 +120,26 @@
 
             $.backstretch('next');
 		});
+
+        // Menu toggle
+        menuToggleBtn.on('click', function(e) {
+            content.fadeToggle();
+            navMenu.fadeToggle();
+            logo.fadeToggle();
+                if (hidden) {
+                    $(e.target).text("VIEW FULL IMAGE");
+                    hidden = false;
+                    slider.css({
+                        'top': '260px'
+                    });
+                } else {
+                    $(e.target).text('MENU');
+                    hidden = true;
+                    slider.css({
+                        'top': '0px'
+                    });
+                }
+        });
 
 	});
 </script>

@@ -22,20 +22,23 @@
                         MAP
                         </button>
 
-                        <div class="slider">
-                            <button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
-                            <p class="uppercase">Click to view <br> more images</p>
-                            <ul class="controls">
-                                <li><a href="" class="first slider-button current"></a></li>
-                                <li><a href="" class="second slider-button"></a></li>
-                                <li><a href="" class="third slider-button"></a></li>
-                                <li><a href="" class="fourth slider-button"></a></li>
-                                <li><a href="" class="left slider-control"></a></li>
-                                <li><a href="" class="right slider-control"></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="slider">
+            <button type="button" id="toggle-menu">VIEW FULL IMAGE</button>
+            <p class="uppercase">Click to view <br> more images</p>
+            <ul class="controls">
+                <li><a href="" class="first slider-button current"></a></li>
+                <li><a href="" class="second slider-button"></a></li>
+                <li><a href="" class="third slider-button"></a></li>
+                <li><a href="" class="fourth slider-button"></a></li>
+                <li><a href="" class="left slider-control"></a></li>
+                <li><a href="" class="right slider-control"></a></li>
+            </ul>
         </div>
     </div>
 
@@ -224,13 +227,14 @@
         var mapOpen       = $('.neighborhood-map-open'),
             mapOpenMobile = $('.gallery-mobile-features'),
             map           = $('.map'),
+            slider        = $('.slider'),
             sliderControl = $('.slider-control'),
             sliderButton  = $('.slider-button'),
             mapLegend     = $('<ul class="map-legend"><li>Restaurants <div class="restaurants-dot"></div></li><li>Cafes <div class="cafes-dot"></div></li><li>Retail <div class="retail-dot"></div></li><li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li></ul>'),
             allPlaces     = $('.place-of-interest'),
+            btnTxt        = "VIEW FULL IMAGE",
             menuToggleBtn = $('#toggle-menu'),
             logo          = $('#logo'),
-            stuff         = $('.stuff'),
             content       = $('.content'),
             navMenu       = $('.nav-list'),
             hidden        = false;
@@ -350,26 +354,22 @@
         });
         // Menu toggle
         menuToggleBtn.on('click', function(e) {
-            stuff.fadeToggle('fast', function() {
-
+            content.fadeToggle();
+            navMenu.fadeToggle();
+            logo.fadeToggle();
                 if (hidden) {
-                    content.css({
-                        'padding': '5px 15px 5px 15px',
-                        'background': 'rgba(226, 221, 211, 0.8)',
-                    });
-                    $(e.target).text('VIEW FULL IMAGE');
+                    $(e.target).text(btnTxt);
                     hidden = false;
-                } else {
-                    content.css({
-                        'padding': '0',
-                        'background': 'none',
+                    slider.css({
+                        'top': '260px'
                     });
+                } else {
                     $(e.target).text('MENU');
                     hidden = true;
+                    slider.css({
+                        'top': '0px'
+                    });
                 }
-            });
-            navMenu.fadeToggle('fast');
-            logo.fadeToggle('fast');
         });
 
 
@@ -377,7 +377,7 @@
             e.preventDefault();
             // hide the open map button
             mapOpen.fadeOut('fast');
-
+            btnTxt = "HIDE MENU";
             openMap();
         });
         mapOpenMobile.click(function(e) {
