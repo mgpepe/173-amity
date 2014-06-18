@@ -32,8 +32,8 @@
 			  				<br/>
 				  			Floorplan
 				  			<br>
-				  			<a class="uppercase small-font floor-link" href="<?php echo '/files/floorplans/' . $a['Apartment']['floorplan'] ?>">View</a> /
-				  			<?php echo $this->Html->link('Download', array('controller'=>'apartments', 'action'=>'dwnld',  $a['Apartment']['id'] ), 
+				  			<a target="_blank" class="uppercase small-font floor-link" href="<?php echo '/files/floorplans/' . $a['Apartment']['floorplan'] ?>">View</a> /
+				  			<?php echo $this->Html->link('Download', array('controller'=>'apartments', 'action'=>'dwnld',  $a['Apartment']['id'] ),
 				  				array('class'=>'uppercase small-font floor-link',)
 				  			); ?>
 				  		</td>

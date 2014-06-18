@@ -9,13 +9,13 @@
 						<p class="big-bottom">
                             <span class="times big-font">Sean Murphy Turner</span>
                             <br>
-                            <span class="uppercase small-font"><a href="sturner@stribling.com">sturner@stribling.com</a></span>
+                            <span class="uppercase small-font"><a href="mailto: sturner@stribling.com">sturner@stribling.com</a></span>
                         </p>
 
                         <p class="big-bottom">
                             <span class="times big-font">Timothy McCarthy</span>
                             <br>
-                            <span class="uppercase small-font"><a href="tmccarthy@stribling.com">tmccarthy@stribling.com</a></span>
+                            <span class="uppercase small-font"><a href="mailto: tmccarthy@stribling.com">tmccarthy@stribling.com</a></span>
                         </p>
 
                         <p class="uppercase big-bottom small-font">Exclusive sales &amp; marketing</p>

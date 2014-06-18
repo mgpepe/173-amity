@@ -43,7 +43,7 @@
                 <h3 class="uppercase">RESIDENTIAL FEATURES</h2>
                 <ul>
                     <li>Bay windows</li>
-                    <li>White ash hardwood floors</li>
+                    <li>White Ash hardwood floors</li>
                     <li>Video intercom system</li>
                     <li>Interior architecture and design by PKSB</li>
                     <li>Windowed kitchens and master baths</li>
@@ -54,37 +54,37 @@
                 </ul>
             </div>
             <div class="feature very-big-bottom">
-                <h3 class="uppercase">Kitchen</h2>
+                <h3 class="uppercase">KITCHEN</h2>
                 <ul>
                     <li>Custom Alno white gloss lacquer and walnut cabinetry</li>
-                    <li>Ceasarstone countertops in blizzard white</li>
+                    <li>Caesarstone countertops in blizzard white</li>
                     <li>Glass tile backsplash - gloss finish</li>
                     <li>Bosch dual fuel stainless steel range</li>
                     <li>Fully integrated Bosch dishwasher</li>
                     <li>Hansgrohe "Tails" faucet</li>
                     <li>Dacor microwave drawer</li>
-                    <li>"Fabinata" pendant lights by Elgo</li>
-                    <li>Garbage disposal</li>
+                    <li>"Fabiana" pendant lights by Eglo</li>
+                    <li>Garbage Disposal</li>
                 </ul>
             </div>
             <div class="feature very-big-bottom">
-                <h3 class="uppercase">Master bath</h2>
+                <h3 class="uppercase">MASTER BATH</h2>
                 <ul>
-                    <li>Stellar white marble floor and wall tiles, honed finish</li>
-                    <li>Alno walnut vanity with double under mounted sinks and Hansgrohe faucets</li>
-                    <li>Stellar white marble countertop - honed finish.</li>
+                    <li>Stellar White marble floor &amp; wall tiles - honed finish</li>
+                    <li>Alno walnut vanity with double under mounted sinks & Hangrohe faucets</li>
+                    <li>Stellar White marble countertops - honed finish</li>
                     <li>Frameless glass shower enclosure</li>
                     <li>Recessed medicine cabinets by Robern</li>
                 </ul>
             </div>
             <div class="feature very-big-bottom">
-                <h3 class="uppercase">Second bath</h2>
+                <h3 class="uppercase">SECOND BATH</h2>
                 <ul>
-                    <li>Lazer marble white wall tiles</li>
+                    <li>Lazer White marble wall tiles </li>
                     <li>Pantheon porcelain floor tiles</li>
                     <li>Floating walnut vanity by Alno</li>
-                    <li>Hansgrohe faucets</li>
-                    <li>Ceaserstone countertop in blizzard white</li>
+                    <li>Hangrohe faucets</li>
+                    <li>Caesarstone countertop in blizzard white</li>
                     <li>Recessed medicine cabinet by Robern</li>
                 </ul>
             </div>
