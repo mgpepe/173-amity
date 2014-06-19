@@ -25,7 +25,13 @@
 	<?php echo $this->Session->flash(); ?>
 	<?php echo $this->fetch('content'); ?>
 </div>
-	<?php // echo $this->element('sql_dump'); ?>
+	<div class="legal-warning">
+		<div class="warning-button-close"><span class="uppercase small-font">
+            close
+        </span></div>
+		<p>All images are artist renderings. All dimensions are approximate and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. Plans or dimensions may contain minor variations from floor to floor. This is not an offering. The complete offering terms are in an offering plan available from sponsor. File Number: CD#13-0027. Sponsor: 173 Amity LLC c/o Lonicera Partners LLC.</p>
+	</div>
+	<script src="js/main.js"></script>
 	<!-- Latest compiled and minified JavaScript. At end so page loads faster -->
 </body>
 </html>

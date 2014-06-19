@@ -10,6 +10,7 @@
                     <p class="very-big-bottom">
                         173 Amity perfectly personifies the kind of living that encompasses the uniqueness of Cobble Hill. Interiors feature open, windowed kitchens designed with top- of- the-line appliances. Double bay windows, flexible layouts and home offices are unique to the West line. The East apartments are perfect two bedrooms with exposures on three sides and include a one- of-a kind top floor apartment which has a stairway leading to a private rooftop terrace featuring amazing views over Brooklyn.
                     </p>
+                    <a href="#" class="legal-notice-btn">LEGAL</a>
                     <button type="button" class="gallery-mobile-features is-futura">
                         FEATURES
                     </button>

@@ -48,6 +48,70 @@ h1{
 	font-size: 50px;
 }
 
+.legal-notice-btn {
+	display: inline-block;
+	padding-left: 30px;
+	padding-top: 2px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	//height: 22px;
+	line-height: 22px;
+	background-image: url(../img/legal-button.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	font-family: 'Futura_lt_book';
+	text-decoration: underline;
+
+	&:hover {
+		color: @dark-brownish;
+	}
+}
+
+.legal-warning {
+	display: none;
+	background: #362b23;
+	background: rgba(54,43,35,0.95);
+	position: fixed;
+	top: 45px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 999999;
+	color: #e2ddd3;
+	p {
+		font-family: times;
+		font-size: 12px;
+		padding: 40px;
+		font-weight: normal;
+	}
+
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px) {
+		width: 500px;
+		height: 190px;
+		top: 0;
+		bottom: 0;
+	}
+	@media only screen
+	and (min-device-width : 800px)
+	and (max-device-width : 1280px) {
+		width: 500px;
+		height: 190px;
+		top: 0;
+		bottom: 0;
+
+	}
+	@media (min-width: 1024px) {
+		width: 600px;
+		height: 180px;
+		left: 200px;
+		top: 0;
+		bottom: 0;
+
+	}
+}
+
 
 .main-container {
     .navbar-collapse {
@@ -66,12 +130,19 @@ h1{
 	@media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
+		.legal-notice-btn {
+			font-size: 14px;
+		}
 	}
 
 	/* iPhone 5 (portrait & landscape)----------- */
 	@media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 568px) {
+		.legal-notice-btn {
+			font-size: 14px;
+
+		}
 		.neighborhood-map {
 			#logo {
 				position: fixed;
@@ -314,6 +385,10 @@ h1{
 	and (min-device-width : 360px)
 	and (max-device-width : 640px) {
 	/* STYLES GO HERE */
+		.legal-notice-btn {
+			font-size: 14px;
+
+		}
 		.neighborhood-map {
 			#logo {
 				position: fixed;
@@ -877,16 +952,24 @@ h1.in-contacts {
 		}
 	}
 }
-.features-button-close {
+.features-button-close, .warning-button-close {
 	position: absolute;
 	top: 10px;
 	right: 10px;
 	height: 21px;
-	background: url(../img/gallery-features-close.gif) no-repeat;
-	background-position: top right;
 	cursor: pointer;
 	padding-right: 24px;
+}
+
+.features-button-close {
+	background: url(../img/gallery-features-close.gif) no-repeat;
+	background-position: top right;
 	color: @dark-brownish;
+}
+
+.warning-button-close {
+	background: url(../img/legal-notice-displayed.png) no-repeat;
+	background-position: top right;
 }
 
 .features {
@@ -1298,9 +1381,16 @@ h1.in-contacts {
 }
 
 .empty-content {
+	position: relative;
 	width: 100%;
 	height: 400px;
 	background: @beige;
+
+	.legal-notice-btn {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
 }
 
 // apartments form

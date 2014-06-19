@@ -20,6 +20,7 @@
 
                         <p class="uppercase big-bottom small-font">Exclusive sales &amp; marketing</p>
                         <img src="/img/signature.gif" alt="signature" class="img-responsive signature-img">
+                        <a href="#" class="legal-notice-btn">LEGAL</a>
 					</div>
 				</div>
 		</div>
@@ -169,7 +170,6 @@
 	</div>
 
 </div>
-
 
 <script src="js/jquery.backstretch.min.js"></script>
 <script> $.backstretch("/img/image-for-back.jpg"); </script>

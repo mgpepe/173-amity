@@ -18,6 +18,7 @@
                                 <li>Grocery/Bakery <div class="grocery-dot"></div></li><li>Others <div class="others-dot"></div></li>
                             </ul>
                         </div>
+                        <a href="#" class="legal-notice-btn">LEGAL</a>
                         <button type="button" class="gallery-mobile-features is-futura">
                         MAP
                         </button>
