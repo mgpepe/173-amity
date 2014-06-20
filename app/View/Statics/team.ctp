@@ -6,6 +6,7 @@
 
             <div class="row">
                 <div id="team-sidebar" class="empty-content">
+                    <a href="#" class="legal-notice-btn">LEGAL</a>
                 </div>
             </div>
         </div>
@@ -39,7 +40,7 @@
                 <li class="pksb-p">PKSB is an all-service architecture firm based in New York City, with nearly <br>fifty years of experience and hundreds of projects around the world.<br> Under the leadership of principals Sherida Paulsen, FAIA, William Fellows, <br>AIA, and Tim Witzig, AIA, PKSB works with its clients to create sophisticated, <br>user-focused, architectural solutions.
                 Whether reimagining a landmarked <br>warehouse or creating a new educational facility, PKSB’s thoughtful designs <br>have satisfied generations of clients, won critical acclaim, and created <br>inspirational architecture for millions of people.</li>
             </ul>
-            <a href="#" class="legal-notice-btn">LEGAL</a>
+
         </div>
     </div>
 </div>
