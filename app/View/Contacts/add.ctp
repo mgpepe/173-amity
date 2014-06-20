@@ -19,7 +19,7 @@
                         </p>
 
                         <p class="uppercase big-bottom small-font">Exclusive sales &amp; marketing</p>
-                        <img src="/img/signature.gif" alt="signature" class="img-responsive signature-img">
+                        <img src="/img/signature.png" alt="signature" class="img-responsive signature-img">
                         <a href="#" class="legal-notice-btn">LEGAL</a>
 					</div>
 				</div>
