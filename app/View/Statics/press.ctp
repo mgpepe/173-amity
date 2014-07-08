@@ -15,10 +15,10 @@
 	<div class=" col-md-9 col-sm-9 col-lg-9 timestext"  >
 		<div class="row press-item">
 			<div class="col-md-5 press-image-box">
-				<img src="/img/news-logo-g.png"/>
+				<img src="/img/buzz-buzz-new-logo.png"/>
 			</div>
-			<div class="col-md-7">
-				<p>05/28/2014<br/>Keeping an eye on Cobble Hill condo conversion 173 Amity Street</p>
+			<div class="col-md-7" style="padding-top: 15px;">
+				<p>05/28/2014<br/><strong>Keeping an eye on Cobble Hill condo conversion 173 Amity Street</strong></p>
 
 				<p>Condo conversion 173 Amity Street in Cobble Hill is coming soon. The corner four-story limestone building traded in 2012 for...</p>
 
