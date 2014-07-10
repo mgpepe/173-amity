@@ -15,7 +15,7 @@
 	<div class=" col-md-9 col-sm-9 col-lg-9 timestext"  >
 		<div class="row press-item">
 			<div class="col-md-5 press-image-box">
-				<img src="/img/buzz-buzz-new-logo.png"/>
+				<img src="/img/buzz-buzz-new-logo.png" alt="Buzz Buzz logo" width="118" height="72">
 			</div>
 			<div class="col-md-7" style="padding-top: 15px;">
 				<p>05/28/2014<br/><strong>Keeping an eye on Cobble Hill condo conversion 173 Amity Street</strong></p>
