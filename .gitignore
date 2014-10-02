@@ -3,12 +3,18 @@
 /app/Config/database.php
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
-app/vendor
-app/Plugin
+/plugins
+/vendors
 /build
 /dist
 /tags
-custom.log
+*.mo
+*.log
+
+# IDE and editor specific files #
+#################################
+/nbproject
+.idea
 
 # OS generated files #
 ######################
