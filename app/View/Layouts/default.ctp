@@ -3,8 +3,13 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $title_for_layout; ?> | 173 Amity ST.
+		<?php echo $title_for_layout; ?> | 173 Amity St.
 	</title>
+	<meta property="og:title" content="173 Amity ST." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="<?php echo Router::url( $this->here, true ); ?> " />
+	<meta property="og:image" content="http://173amitystreet.com/img/home/1.jpg" />
+	<meta property="og:description" content="173 Amity, located in historic Cobble Hill at the corner of Clinton and Amity Street, is a magnificent four-story limestone building built in 1900. The historic quality of the majestic exterior combined with the elegance of the interior design by PKSB Architects makes 173 Amity Street a rare find. Serene and private, the building features only two homes per floor, each containing two to three bedrooms. The spacious living and dining areas feature beautiful bay windows over- looking an intimate tree-lined street made up of 19th century architecture." />
 	<?php
 		echo $this->Html->meta('icon');
 

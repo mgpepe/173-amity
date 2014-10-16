@@ -21,6 +21,7 @@
 					echo $this->Form->input('bedrooms');
 					echo $this->Form->input('baths');
 					echo $this->Form->input('interior');
+					echo $this->Form->input('exterior');
 					echo $this->Form->input('price');
 					echo $this->Form->input('taxes');
 					echo $this->Form->input('common_charges');

@@ -19,6 +19,7 @@
 			  		<th class="uppercase">Bedrooms</th>
 			  		<th class="uppercase">Baths</th>
 			  		<th class="uppercase">Interior<br>Sq.Ft</th>
+			  		<th class="uppercase">Exterior<br>Sq.Ft</th>
 			  		<th class="uppercase">Price</th>
 			  		<th class="uppercase">Estimated<br/>Monthly<br/>Taxes</th>
 			  		<th class="uppercase">Estimated<br/>Monthly<br/>Common<br/>Charges</th>
@@ -46,6 +47,9 @@
 				  		</td>
 				  		<td>
 				  			<span class="uppercase"><?php echo htmlspecialchars_decode($a['Apartment']['interior']);  ?></span>
+				  		</td>
+				  		<td>
+				  			<span class="uppercase"><?php echo htmlspecialchars_decode($a['Apartment']['exterior']);  ?></span>
 				  		</td>
 				  		<td>
 				  			<span class="uppercase">
@@ -84,7 +88,12 @@
 			</tbody>
 		</table>
 	</div>
-	<footer class="availability-footer very-small-font col-md-9 col-sm-8 col-lg-9">
+	<footer class="availability-footer  col-md-9 col-sm-8 col-lg-9">
+		<span style="margin-right:20px;">173 Amity Street </span>
+		<span style="margin-right:20px;">Brooklyn, NY 11201 </span>                        
+		<span style="margin-right:20px;">646-613-2624  </span>                    
+		<span style="margin-right:20px;"> <a href="www.173amitystreet.com">www.173amitystreet.com</a>  </span>                    
+	
 		<!-- <img src="/img/signature2.gif" alt="signature2" class="sig1">
 		<img src="/img/signature.png" alt="signture" class="sig2">
 		<p>All dimensions are appropriate and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. Plans and dimensions may contain minor variations from floor to floor. This is not an offerig, 173 Amity LLC something something. The complete offering terms arein an offering plan available from sponsor. File CD13-0027</p> -->
